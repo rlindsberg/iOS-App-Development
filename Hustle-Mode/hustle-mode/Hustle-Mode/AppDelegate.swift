@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  hustle-mode
+//  Hustle-Mode
 //
-//  Created by Linné Lind on 27/04/2018.
+//  Created by Roderick Karlemstrand on 29/04/2018.
 //  Copyright © 2018 Karlemstrand AB. All rights reserved.
 //
 

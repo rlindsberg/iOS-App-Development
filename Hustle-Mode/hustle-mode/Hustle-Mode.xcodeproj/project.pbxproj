@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		870021922093B84A0008762F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870021912093B84A0008762F /* AppDelegate.swift */; };
-		870021942093B84A0008762F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870021932093B84A0008762F /* ViewController.swift */; };
-		870021972093B84A0008762F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870021952093B84A0008762F /* Main.storyboard */; };
-		870021992093B84A0008762F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870021982093B84A0008762F /* Assets.xcassets */; };
-		8700219C2093B84A0008762F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8700219A2093B84A0008762F /* LaunchScreen.storyboard */; };
-		87B1DA612093BFF00021B0C5 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87B1DA602093BFEF0021B0C5 /* hustle-on.wav */; };
+		87633B98209654FA00996FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87633B97209654FA00996FE6 /* AppDelegate.swift */; };
+		87633B9A209654FA00996FE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87633B99209654FA00996FE6 /* ViewController.swift */; };
+		87633B9D209654FA00996FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87633B9B209654FA00996FE6 /* Main.storyboard */; };
+		87633B9F209654FA00996FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87633B9E209654FA00996FE6 /* Assets.xcassets */; };
+		87633BA2209654FA00996FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87633BA0209654FA00996FE6 /* LaunchScreen.storyboard */; };
+		87633BAA209655B200996FE6 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87633BA9209655B200996FE6 /* hustle-on.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8700218E2093B84A0008762F /* hustle-mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hustle-mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		870021912093B84A0008762F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		870021932093B84A0008762F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		870021962093B84A0008762F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		870021982093B84A0008762F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8700219B2093B84A0008762F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8700219D2093B84A0008762F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87B1DA602093BFEF0021B0C5 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hustle-on.wav"; sourceTree = "<group>"; };
+		87633B94209654FA00996FE6 /* Hustle-Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hustle-Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87633B97209654FA00996FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87633B99209654FA00996FE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87633B9C209654FA00996FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87633B9E209654FA00996FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87633BA1209654FA00996FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87633BA3209654FA00996FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87633BA9209655B200996FE6 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hustle-on.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8700218B2093B84A0008762F /* Frameworks */ = {
+		87633B91209654FA00996FE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +37,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		870021852093B84A0008762F = {
+		87633B8B209654FA00996FE6 = {
 			isa = PBXGroup;
 			children = (
-				870021902093B84A0008762F /* hustle-mode */,
-				8700218F2093B84A0008762F /* Products */,
+				87633B96209654FA00996FE6 /* Hustle-Mode */,
+				87633B95209654FA00996FE6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8700218F2093B84A0008762F /* Products */ = {
+		87633B95209654FA00996FE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8700218E2093B84A0008762F /* hustle-mode.app */,
+				87633B94209654FA00996FE6 /* Hustle-Mode.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		870021902093B84A0008762F /* hustle-mode */ = {
+		87633B96209654FA00996FE6 /* Hustle-Mode */ = {
 			isa = PBXGroup;
 			children = (
-				87B1DA602093BFEF0021B0C5 /* hustle-on.wav */,
-				870021912093B84A0008762F /* AppDelegate.swift */,
-				870021932093B84A0008762F /* ViewController.swift */,
-				870021952093B84A0008762F /* Main.storyboard */,
-				870021982093B84A0008762F /* Assets.xcassets */,
-				8700219A2093B84A0008762F /* LaunchScreen.storyboard */,
-				8700219D2093B84A0008762F /* Info.plist */,
+				87633B97209654FA00996FE6 /* AppDelegate.swift */,
+				87633B99209654FA00996FE6 /* ViewController.swift */,
+				87633B9B209654FA00996FE6 /* Main.storyboard */,
+				87633B9E209654FA00996FE6 /* Assets.xcassets */,
+				87633BA0209654FA00996FE6 /* LaunchScreen.storyboard */,
+				87633BA3209654FA00996FE6 /* Info.plist */,
+				87633BA9209655B200996FE6 /* hustle-on.wav */,
 			);
-			path = "hustle-mode";
+			path = "Hustle-Mode";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8700218D2093B84A0008762F /* hustle-mode */ = {
+		87633B93209654FA00996FE6 /* Hustle-Mode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 870021A02093B84A0008762F /* Build configuration list for PBXNativeTarget "hustle-mode" */;
+			buildConfigurationList = 87633BA6209654FA00996FE6 /* Build configuration list for PBXNativeTarget "Hustle-Mode" */;
 			buildPhases = (
-				8700218A2093B84A0008762F /* Sources */,
-				8700218B2093B84A0008762F /* Frameworks */,
-				8700218C2093B84A0008762F /* Resources */,
+				87633B90209654FA00996FE6 /* Sources */,
+				87633B91209654FA00996FE6 /* Frameworks */,
+				87633B92209654FA00996FE6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "hustle-mode";
-			productName = "hustle-mode";
-			productReference = 8700218E2093B84A0008762F /* hustle-mode.app */;
+			name = "Hustle-Mode";
+			productName = "Hustle-Mode";
+			productReference = 87633B94209654FA00996FE6 /* Hustle-Mode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		870021862093B84A0008762F /* Project object */ = {
+		87633B8C209654FA00996FE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Karlemstrand AB";
 				TargetAttributes = {
-					8700218D2093B84A0008762F = {
+					87633B93209654FA00996FE6 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 870021892093B84A0008762F /* Build configuration list for PBXProject "hustle-mode" */;
+			buildConfigurationList = 87633B8F209654FA00996FE6 /* Build configuration list for PBXProject "Hustle-Mode" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,55 +111,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 870021852093B84A0008762F;
-			productRefGroup = 8700218F2093B84A0008762F /* Products */;
+			mainGroup = 87633B8B209654FA00996FE6;
+			productRefGroup = 87633B95209654FA00996FE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8700218D2093B84A0008762F /* hustle-mode */,
+				87633B93209654FA00996FE6 /* Hustle-Mode */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8700218C2093B84A0008762F /* Resources */ = {
+		87633B92209654FA00996FE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B1DA612093BFF00021B0C5 /* hustle-on.wav in Resources */,
-				8700219C2093B84A0008762F /* LaunchScreen.storyboard in Resources */,
-				870021992093B84A0008762F /* Assets.xcassets in Resources */,
-				870021972093B84A0008762F /* Main.storyboard in Resources */,
+				87633BAA209655B200996FE6 /* hustle-on.wav in Resources */,
+				87633BA2209654FA00996FE6 /* LaunchScreen.storyboard in Resources */,
+				87633B9F209654FA00996FE6 /* Assets.xcassets in Resources */,
+				87633B9D209654FA00996FE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8700218A2093B84A0008762F /* Sources */ = {
+		87633B90209654FA00996FE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870021942093B84A0008762F /* ViewController.swift in Sources */,
-				870021922093B84A0008762F /* AppDelegate.swift in Sources */,
+				87633B9A209654FA00996FE6 /* ViewController.swift in Sources */,
+				87633B98209654FA00996FE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		870021952093B84A0008762F /* Main.storyboard */ = {
+		87633B9B209654FA00996FE6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				870021962093B84A0008762F /* Base */,
+				87633B9C209654FA00996FE6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8700219A2093B84A0008762F /* LaunchScreen.storyboard */ = {
+		87633BA0209654FA00996FE6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8700219B2093B84A0008762F /* Base */,
+				87633BA1209654FA00996FE6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8700219E2093B84A0008762F /* Debug */ = {
+		87633BA4209654FA00996FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		8700219F2093B84A0008762F /* Release */ = {
+		87633BA5209654FA00996FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,30 +274,30 @@
 			};
 			name = Release;
 		};
-		870021A12093B84A0008762F /* Debug */ = {
+		87633BA7209654FA00996FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGN252X8S6;
-				INFOPLIST_FILE = "hustle-mode/Info.plist";
+				INFOPLIST_FILE = "Hustle-Mode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karlemstrand.hustle-mode";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlemstrand.Hustle-Mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		870021A22093B84A0008762F /* Release */ = {
+		87633BA8209654FA00996FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GGN252X8S6;
-				INFOPLIST_FILE = "hustle-mode/Info.plist";
+				INFOPLIST_FILE = "Hustle-Mode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karlemstrand.hustle-mode";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karlemstrand.Hustle-Mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		870021892093B84A0008762F /* Build configuration list for PBXProject "hustle-mode" */ = {
+		87633B8F209654FA00996FE6 /* Build configuration list for PBXProject "Hustle-Mode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8700219E2093B84A0008762F /* Debug */,
-				8700219F2093B84A0008762F /* Release */,
+				87633BA4209654FA00996FE6 /* Debug */,
+				87633BA5209654FA00996FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		870021A02093B84A0008762F /* Build configuration list for PBXNativeTarget "hustle-mode" */ = {
+		87633BA6209654FA00996FE6 /* Build configuration list for PBXNativeTarget "Hustle-Mode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				870021A12093B84A0008762F /* Debug */,
-				870021A22093B84A0008762F /* Release */,
+				87633BA7209654FA00996FE6 /* Debug */,
+				87633BA8209654FA00996FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 870021862093B84A0008762F /* Project object */;
+	rootObject = 87633B8C209654FA00996FE6 /* Project object */;
 }
