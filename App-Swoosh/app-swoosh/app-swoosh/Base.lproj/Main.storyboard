@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,17 +46,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syh-Nv-d63">
-                                <rect key="frame" x="43" y="300" width="292" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syh-Nv-d63">
+                                <rect key="frame" x="40" y="309" width="295" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="u6H-Jx-2ah"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD8-xb-0YA" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="51" y="561" width="278" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD8-xb-0YA" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="55" y="563" width="265" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.41724422089041102" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SD8-xb-0YA" secondAttribute="height" multiplier="139:21" id="ZGE-V2-s8j"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Get Started">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +69,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="syh-Nv-d63" secondAttribute="trailing" constant="40" id="43I-jU-tj3"/>
                             <constraint firstItem="PDA-dp-x6P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6sA-U6-Rwx"/>
+                            <constraint firstItem="SD8-xb-0YA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RFP-O7-KU3"/>
+                            <constraint firstItem="syh-Nv-d63" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YKh-US-lbF"/>
+                            <constraint firstItem="syh-Nv-d63" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="YUl-6X-bQW"/>
+                            <constraint firstItem="syh-Nv-d63" firstAttribute="top" secondItem="m6V-KA-t3E" secondAttribute="bottom" constant="50" id="YaQ-tk-wCu"/>
                             <constraint firstItem="Vz4-gd-eOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZJl-0O-lsc"/>
                             <constraint firstItem="bDM-Om-7OF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ed2-Pm-ojJ"/>
                             <constraint firstItem="PDA-dp-x6P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ffK-UF-IvO"/>
@@ -74,6 +84,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vz4-gd-eOK" secondAttribute="trailing" id="toJ-t0-uSp"/>
                             <constraint firstItem="Vz4-gd-eOK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tvr-Xg-kBt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vz4-gd-eOK" secondAttribute="bottom" id="wW8-Sy-qwQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SD8-xb-0YA" secondAttribute="bottom" constant="64" id="y2n-hZ-TMe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
