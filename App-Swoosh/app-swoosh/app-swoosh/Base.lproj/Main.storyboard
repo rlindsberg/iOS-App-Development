@@ -33,16 +33,14 @@
                                     <constraint firstAttribute="width" constant="154" id="ooX-SC-MkW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GO ALL IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-Om-7OF">
-                                <rect key="frame" x="57" y="159" width="262" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-Om-7OF">
+                                <rect key="frame" x="56.5" y="162" width="262" height="71"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="52"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON GOING ALL OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6V-KA-t3E">
-                                <rect key="frame" x="59" y="217" width="262" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6V-KA-t3E">
+                                <rect key="frame" x="59" y="223" width="257" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -68,7 +66,11 @@
                         <constraints>
                             <constraint firstItem="PDA-dp-x6P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6sA-U6-Rwx"/>
                             <constraint firstItem="Vz4-gd-eOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZJl-0O-lsc"/>
+                            <constraint firstItem="bDM-Om-7OF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ed2-Pm-ojJ"/>
                             <constraint firstItem="PDA-dp-x6P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ffK-UF-IvO"/>
+                            <constraint firstItem="m6V-KA-t3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jNX-7a-0nt"/>
+                            <constraint firstItem="bDM-Om-7OF" firstAttribute="top" secondItem="PDA-dp-x6P" secondAttribute="bottom" constant="70" id="m7d-bb-40f"/>
+                            <constraint firstItem="m6V-KA-t3E" firstAttribute="top" secondItem="bDM-Om-7OF" secondAttribute="bottom" constant="-10" id="pNV-h9-8Nz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vz4-gd-eOK" secondAttribute="trailing" id="toJ-t0-uSp"/>
                             <constraint firstItem="Vz4-gd-eOK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tvr-Xg-kBt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vz4-gd-eOK" secondAttribute="bottom" id="wW8-Sy-qwQ"/>
