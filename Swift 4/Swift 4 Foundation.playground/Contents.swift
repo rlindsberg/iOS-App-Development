@@ -21,3 +21,8 @@ feelGoodAboutMyself = amICool ? "Yeah I'm cool" : "Nay"
 //Ternary ex.2
 var bankAccountBalance = 100
 var cashRegisterMess = bankAccountBalance >= 150 ? "You just bought the item" : "Payment not approved"
+
+//String interpolation
+var firstName = "Jack"
+var lastName = "Bauer"
+var fullName = "\(firstName) \(lastName)"
