@@ -89,10 +89,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="BGimg" destination="Vz4-gd-eOK" id="EfX-Dr-Q7m"/>
-                        <outlet property="swoosh" destination="PDA-dp-x6P" id="dOE-PV-sFP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +142,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1aR-01-Ht9" kind="show" id="E1r-o2-aJq"/>
+                                    <action selector="onNextTapped:" destination="SBU-Dz-rry" eventType="touchUpInside" id="AXP-4o-gQq"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Dhe-SF-0vW">
@@ -202,11 +198,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8nI-Qe-cVo"/>
                     </view>
+                    <connections>
+                        <segue destination="1aR-01-Ht9" kind="show" identifier="skillVCSegue" id="6VI-k2-yX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbG-qZ-eag" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ufD-GE-Xw6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="924" y="133.5832083958021"/>
+            <point key="canvasLocation" x="924" y="134"/>
         </scene>
         <!--SkillVC-->
         <scene sceneID="JOk-Dn-FIX">
