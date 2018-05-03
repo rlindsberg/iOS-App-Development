@@ -1,6 +1,6 @@
 osx_image: xcode8.3
 language: swift
-xcode_project: Dev-Profile/dev-profile8.xcodeproj
+xcode_project: Dev-Profile/dev-profile/dev-profile8.xcodeproj
 xcode_scheme: dev-profile8
 xcode_sdk: iphonesimulator10.2
 
@@ -14,7 +14,7 @@ branches:
   - experimental
 
 
-script: xcodebuild -project NAME.xcodeproj -scheme NAME -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -project Dev-Profile/dev-profile/dev-profile8.xcodeproj -scheme dev-profile8 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: true
