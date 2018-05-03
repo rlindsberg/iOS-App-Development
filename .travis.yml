@@ -1,4 +1,13 @@
 osx_image: xcode9.1
 language: swift
 
-xcode_project: App-Swoosh/app-swoosh.xcodeproj
+before_install:
+- brew install yarn
+
+xcode_project: Dev-Profile/dev-prifile.xcodeproj
+
+# blocklist
+branches:
+  except:
+  - legacy
+  - experimental
