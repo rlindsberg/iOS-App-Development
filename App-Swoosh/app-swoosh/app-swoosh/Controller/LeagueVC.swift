@@ -41,6 +41,14 @@ class LeagueVC: UIViewController {
         selectLeague(leagueType: "coed")
     }
     
+    //prepareForSegue is always called before viewDisLoad on the destination view controller!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Grab the dest. view controller and put into a variable, then pass data to it
+        if let thisSkillVC = segue.destination as? SkillVC {
+            thisSkillVC.player = somePlayer
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -50,5 +58,6 @@ class LeagueVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
