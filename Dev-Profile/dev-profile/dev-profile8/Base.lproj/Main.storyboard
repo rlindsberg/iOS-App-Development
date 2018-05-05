@@ -43,10 +43,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ErE-mP-8Tk">
-                                <rect key="frame" x="67.5" y="190" width="240" height="39.5"/>
+                                <rect key="frame" x="67.5" y="190" width="240" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3G-nV-28c">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="O3G-nV-28c" secondAttribute="height" multiplier="1:1" id="fgO-Bd-DU0"/>
                                             <constraint firstAttribute="width" constant="40" id="oxo-Hf-725"/>
@@ -54,17 +54,17 @@
                                         <state key="normal" image="cameraButton"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K5-cu-HSU">
-                                        <rect key="frame" x="100" y="0.0" width="40" height="39.5"/>
+                                        <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                         <state key="normal" image="favoriteButton"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nze-VO-JGB">
-                                        <rect key="frame" x="200" y="0.0" width="40" height="39.5"/>
+                                        <rect key="frame" x="200" y="0.0" width="40" height="40"/>
                                         <state key="normal" image="inboxButton"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="vxR-rI-6DS">
-                                <rect key="frame" x="26" y="259.5" width="323" height="148"/>
+                                <rect key="frame" x="26" y="260" width="323" height="148"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-nz-Ble">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
@@ -86,7 +86,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="cWz-9O-CZX">
-                                <rect key="frame" x="26" y="437.5" width="323" height="148"/>
+                                <rect key="frame" x="26" y="438" width="323" height="148"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="rK9-KU-iIy">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
