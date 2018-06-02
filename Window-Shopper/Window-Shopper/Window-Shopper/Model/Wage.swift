@@ -10,6 +10,7 @@ import Foundation
 class Wage {
     //forWage and andPrice are parameters of the function. wage and price are names of the variables
     class func getHours(forWage wage: Double, andPrice price: Double) -> Int {
+        print("\(ceil(price / wage))")
         return Int(ceil(price / wage))
     }
 }

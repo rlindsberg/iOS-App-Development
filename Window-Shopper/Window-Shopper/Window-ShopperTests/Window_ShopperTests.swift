@@ -32,6 +32,11 @@ class Window_ShopperTests: XCTestCase {
     
     // Good functions accept input and return output
     // Bad functions set global variables and rely on other functions to work
+    // Always run and pass your unit tests before you:
+    // Create PRs
+    // Deploy to device
+    // Send app to beta testers
+    // Submit apps to App Store
     func testGetHours() {
         XCTAssert(Wage.getHours(forWage: 25, andPrice: 100) == 4)
         XCTAssert(Wage.getHours(forWage: 15.50, andPrice: 255.53) == 17) //Round up 16.16 to 17.
