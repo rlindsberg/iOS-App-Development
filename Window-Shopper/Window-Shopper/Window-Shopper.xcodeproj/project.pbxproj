@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		870B396920C30BDC005FE279 /* Window_ShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870B396820C30BDC005FE279 /* Window_ShopperTests.swift */; };
 		870B397220C30C08005FE279 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870B397120C30C08005FE279 /* Wage.swift */; };
+		870B397420C31016005FE279 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870B397120C30C08005FE279 /* Wage.swift */; };
 		8796BCE4209D8CFE0005347F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796BCE3209D8CFE0005347F /* AppDelegate.swift */; };
 		8796BCE6209D8CFE0005347F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796BCE5209D8CFE0005347F /* MainVC.swift */; };
 		8796BCE9209D8CFF0005347F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8796BCE7209D8CFF0005347F /* Main.storyboard */; };
@@ -230,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				870B396920C30BDC005FE279 /* Window_ShopperTests.swift in Sources */,
+				870B397420C31016005FE279 /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
