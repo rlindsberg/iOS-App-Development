@@ -29,6 +29,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "870B396520C30BDB005FE279"
+               BuildableName = "Window-ShopperTests.xctest"
+               BlueprintName = "Window-ShopperTests"
+               ReferencedContainer = "container:Window-Shopper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
