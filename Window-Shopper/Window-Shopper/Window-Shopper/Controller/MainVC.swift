@@ -13,6 +13,8 @@ class MainVC: UIViewController {
     @IBOutlet weak var wageTxt: CurrencyTxtField!
     @IBOutlet weak var priceTxt: CurrencyTxtField!
     
+    @IBOutlet weak var resultLbl: UILabel!
+    @IBOutlet weak var hoursLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +31,35 @@ class MainVC: UIViewController {
         //set the button as accessory view
         wageTxt.inputAccessoryView = calcBtn
         priceTxt.inputAccessoryView = calcBtn
+        
+        resultLbl.isHidden = true
+        hoursLbl.isHidden = true
     }
     //@objc exposes the objc-feature
     @objc func calculate(){
         //debuging. print when button is clicked
-        print("We got here")
+        print("Btn pressed")
+        
+        //if wageTxt.text and priceTxt.text is not nil, do following
+        if let wageText = wageTxt.text, let priceText = priceTxt.text {
+            //Conver to type double
+            if let wageDbl = Double(wageText), let priceDbl = Double(priceText) {
+                view.endEditing(true) //dismiss keyboard
+                resultLbl.isHidden = false
+                hoursLbl.isHidden = false
+                resultLbl.text = "\(Wage.getHours(forWage: wageDbl, andPrice: priceDbl))"
+            }
+            
+        }
     }
 
+    @IBAction func clearCalculatorPressed(_ sender: Any) {
+        resultLbl.isHidden = true
+        hoursLbl.isHidden = true
+        wageTxt.text = ""
+        priceTxt.text = ""
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
