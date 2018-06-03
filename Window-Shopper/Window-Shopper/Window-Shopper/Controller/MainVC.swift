@@ -42,6 +42,10 @@ class MainVC: UIViewController {
         
         //if wageTxt.text and priceTxt.text is not nil, do following
         if let wageText = wageTxt.text, let priceText = priceTxt.text {
+            //add dollar sign
+            wageTxt.text = "$" + wageTxt.text!
+            priceTxt.text = "$" + priceTxt.text!
+            
             //Conver to type double
             if let wageDbl = Double(wageText), let priceDbl = Double(priceText) {
                 view.endEditing(true) //dismiss keyboard
