@@ -11,6 +11,7 @@
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,24 +33,36 @@
                                 <rect key="frame" x="0.0" y="58.5" width="375" height="544.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="OdF-jz-OT3">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="99"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="OdF-jz-OT3" customClass="CategoryTableViewCell" customModule="Coder_Swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OdF-jz-OT3" id="2FK-8g-x7v">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lFE-ur-kwN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="lFE-ur-kwN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cor-wa-62j">
+                                                    <rect key="frame" x="141" y="56.5" width="93" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="lFE-ur-kwN" secondAttribute="bottom" id="3eK-Ay-o0x"/>
                                                 <constraint firstItem="lFE-ur-kwN" firstAttribute="leading" secondItem="2FK-8g-x7v" secondAttribute="leading" id="TLt-Eq-Bba"/>
                                                 <constraint firstAttribute="trailing" secondItem="lFE-ur-kwN" secondAttribute="trailing" id="Ylu-D0-Ctc"/>
+                                                <constraint firstItem="cor-wa-62j" firstAttribute="centerY" secondItem="2FK-8g-x7v" secondAttribute="centerY" id="mn8-6l-aUy"/>
+                                                <constraint firstItem="cor-wa-62j" firstAttribute="centerX" secondItem="2FK-8g-x7v" secondAttribute="centerX" id="o5O-V7-ArR"/>
                                                 <constraint firstItem="lFE-ur-kwN" firstAttribute="top" secondItem="2FK-8g-x7v" secondAttribute="top" id="xMJ-6L-oUs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="lFE-ur-kwN" id="eZD-dU-ZMH"/>
+                                            <outlet property="categoryTitle" destination="cor-wa-62j" id="M4l-6v-8fd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -66,6 +79,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="XJl-5k-4c6"/>
+                    <connections>
+                        <outlet property="categoryTable" destination="ETH-r3-qgA" id="mNx-Xm-h6V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,4 +110,7 @@
             <point key="canvasLocation" x="1242" y="-11"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="digital" width="1024" height="703"/>
+    </resources>
 </document>
