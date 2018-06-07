@@ -13,7 +13,7 @@ class DataService {
     static let instance = DataService()
     
     //create (or retrive from a server) data source for our app
-    //categories is an array of Category
+    //categories is an array of Category:s
     private let categories = [
         Category(title: "Shirts", imageName: "shirts.png"),
         Category(title: "Hoodies", imageName: "hoodies.png"),
@@ -21,7 +21,8 @@ class DataService {
         Category(title: "Digital", imageName: "digital.png")
     ]
     
-    func getCategories() {
-        
+    //return a array of Category:s.
+    func getCategories() -> [Category]{
+        return categories
     }
 }
