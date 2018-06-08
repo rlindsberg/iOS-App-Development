@@ -15,6 +15,9 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //the data source and delegate is this very class
+        categoryTable.dataSource = self
+        categoryTable.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +32,17 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        //create a reusable cell called CategoryCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryTableViewCell {
+            let category = DataService.instance.getCategories()[indexPath.row]
+            //update views and let view manage itself
+            cell.updateViews(category: category)
+            //do not do this
+            //cell.imageView?.image = UIImage(named: category.imageName)
+            return cell
+        } else {
+            return CategoryTableViewCell() //return an empty one
+        }
     }
 
 }
