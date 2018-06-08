@@ -60,8 +60,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="lFE-ur-kwN" id="eZD-dU-ZMH"/>
-                                            <outlet property="categoryTitle" destination="cor-wa-62j" id="M4l-6v-8fd"/>
+                                            <outlet property="categoryImage" destination="lFE-ur-kwN" id="wwr-VC-0q5"/>
+                                            <outlet property="categoryTitle" destination="cor-wa-62j" id="yWu-Cq-x4f"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -74,6 +74,7 @@
                             <constraint firstItem="ETH-r3-qgA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JuD-yX-W8b"/>
                             <constraint firstAttribute="bottom" secondItem="ETH-r3-qgA" secondAttribute="bottom" id="cXS-Lv-mUN"/>
                             <constraint firstItem="Fgt-YB-fO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jZ7-rH-Yj7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fgt-YB-fO6" secondAttribute="trailing" constant="20" id="msE-D2-TaZ"/>
                             <constraint firstItem="ETH-r3-qgA" firstAttribute="top" secondItem="Fgt-YB-fO6" secondAttribute="bottom" constant="15" id="wR8-mk-gDQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

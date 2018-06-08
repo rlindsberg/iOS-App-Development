@@ -8,11 +8,10 @@
 
 import UIKit
 
-class CategoriesVC: UIViewController {
+class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate { //add datasouce and delegate
 
     @IBOutlet weak var categoryTable: UITableView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +22,15 @@ class CategoriesVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //add datasouce and delegate
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //create so many rows, using .count to turn an array to int
+        return DataService.instance.getCategories().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 
 }
 
