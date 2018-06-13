@@ -15,6 +15,7 @@
 		87693CB620C9BB3900622313 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87693CB520C9BB3900622313 /* CategoryTableViewCell.swift */; };
 		87693CBB20C9C80400622313 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87693CBA20C9C80400622313 /* DataService.swift */; };
 		87693CBD20C9CAC100622313 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87693CBC20C9CAC100622313 /* Category.swift */; };
+		87B8DB4220D0F8D60036EC42 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8DB4120D0F8D60036EC42 /* ProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		87693CB520C9BB3900622313 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		87693CBA20C9C80400622313 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		87693CBC20C9CAC100622313 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		87B8DB4120D0F8D60036EC42 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				87693CB520C9BB3900622313 /* CategoryTableViewCell.swift */,
+				87B8DB4120D0F8D60036EC42 /* ProductCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				870C7A1220C9B4D600C7EBD9 /* AppDelegate.swift in Sources */,
 				87693CB620C9BB3900622313 /* CategoryTableViewCell.swift in Sources */,
 				87693CBB20C9C80400622313 /* DataService.swift in Sources */,
+				87B8DB4220D0F8D60036EC42 /* ProductCollectionViewCell.swift in Sources */,
 				87693CBD20C9CAC100622313 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
