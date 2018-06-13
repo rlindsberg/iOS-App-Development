@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -101,24 +102,55 @@
                                 <rect key="frame" x="0.0" y="58.5" width="375" height="544.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QdO-dv-dlW">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="178" height="249"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dgS-9d-qC0">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="249"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7G8-CZ-a45">
+                                                    <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="178" id="9cc-yI-Ztj"/>
+                                                        <constraint firstAttribute="width" constant="178" id="ab8-jy-Et2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DevSlopes Logo T-shirt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN3-xx-bw5">
+                                                    <rect key="frame" x="5" y="186" width="168" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKQ-3q-DJb">
+                                                    <rect key="frame" x="5" y="202.5" width="168" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="aN3-xx-bw5" firstAttribute="leading" secondItem="dgS-9d-qC0" secondAttribute="leadingMargin" constant="5" id="NQx-85-yMf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="aN3-xx-bw5" secondAttribute="trailing" constant="5" id="SCR-kD-sSq"/>
+                                            <constraint firstItem="7G8-CZ-a45" firstAttribute="leading" secondItem="dgS-9d-qC0" secondAttribute="leading" id="Wag-J6-RnU"/>
+                                            <constraint firstItem="iKQ-3q-DJb" firstAttribute="top" secondItem="aN3-xx-bw5" secondAttribute="bottom" id="YGT-TA-7Up"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="iKQ-3q-DJb" secondAttribute="trailing" constant="5" id="jxF-gP-gW2"/>
+                                            <constraint firstItem="7G8-CZ-a45" firstAttribute="top" secondItem="dgS-9d-qC0" secondAttribute="top" id="jxf-GS-lRx"/>
+                                            <constraint firstItem="aN3-xx-bw5" firstAttribute="top" secondItem="7G8-CZ-a45" secondAttribute="bottom" constant="8" id="vLH-Li-4lK"/>
+                                            <constraint firstItem="iKQ-3q-DJb" firstAttribute="leading" secondItem="dgS-9d-qC0" secondAttribute="leadingMargin" constant="5" id="zLS-1F-fbn"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-GC-dC3">
-                                <rect key="frame" x="20" y="20" width="165" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9s-GC-dC3">
+                                <rect key="frame" x="20" y="20" width="89.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
