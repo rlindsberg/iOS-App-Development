@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="XJl-5k-4c6"/>
                     <connections>
                         <outlet property="categoryTable" destination="ETH-r3-qgA" id="mNx-Xm-h6V"/>
-                        <segue destination="XOc-cu-4DB" kind="show" id="W4v-Qj-cNj"/>
+                        <segue destination="XOc-cu-4DB" kind="show" identifier="shopByCategory" id="W4v-Qj-cNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,7 +108,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dgS-9d-qC0" customClass="ProductCollectionViewCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="dgS-9d-qC0" customClass="ProductCollectionViewCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="231"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
