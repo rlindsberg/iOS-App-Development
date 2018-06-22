@@ -12,6 +12,8 @@ class DataService {
     //create a static object of DataService
     static let instance = DataService()
     
+    //CategoryVC
+    
     //create (or retrive from a server) data source for our app
     //categories is an array of Category:s
     private let categories = [
@@ -26,7 +28,18 @@ class DataService {
         return categories
     }
     
+    
+    //ProductVC
+    
     //these demo data are usually on a server
+    private let shirts = [
+        Product(title: "Devslopes Logo Shirt Black", price: "$18", imageName: "shirt01.png"),
+        Product(title: "Devslopes Badge Shirt Light Grey", price: "$18", imageName: "shirt02.png"),
+        Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirt03.png"),
+        Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirt04.png"),
+        Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png"),
+        ]
+    
     private let hats = [
         Product(title: "Devslopes Logo Beanie", price: "$18", imageName: "hat01.png"),
         Product(title: "Devslopes Logo Hat Black", price: "$22", imageName: "hat02.png"),
@@ -41,13 +54,82 @@ class DataService {
         Product(title: "Devslopes Hoodie Black", price: "$32", imageName: "hoodie04.png")
     ]
     
-    private let shirts = [
-        Product(title: "Devslopes Logo Shirt Black", price: "$18", imageName: "shirt01.png"),
-        Product(title: "Devslopes Badge Shirt Light Grey", price: "$18", imageName: "shirt02.png"),
-        Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirt03.png"),
-        Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirt04.png"),
-        Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png"),
-]
-
     private let digitalGoods = [Product]() //the last one, but currently includes nothing. Create an empty array of type Product
+    
+    func getProduct(forCategoryTitle title: String) -> [Product] {
+        switch title {
+        case "SHIRTS":
+            return getShirts()
+        case "HATS":
+            return getHats()
+        case "HOODIES":
+            return getHoodies()
+        case "DIGITALGOODS":
+            return getDigitalGoods()
+        default:
+            return getShirts()
+        }
+    }
+    
+    func getShirts() -> [Product] {
+        return shirts
+    }
+    func getHats() -> [Product] {
+        return hats
+    }
+    func getHoodies() -> [Product] {
+        return hoodies
+    }
+    func getDigitalGoods() -> [Product] {
+        return digitalGoods
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
