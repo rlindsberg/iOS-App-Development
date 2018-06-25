@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="XJl-5k-4c6"/>
                     <connections>
                         <outlet property="categoryTable" destination="ETH-r3-qgA" id="mNx-Xm-h6V"/>
-                        <segue destination="XOc-cu-4DB" kind="show" identifier="shopByCategory" id="W4v-Qj-cNj"/>
+                        <segue destination="XOc-cu-4DB" kind="show" identifier="" id="W4v-Qj-cNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
