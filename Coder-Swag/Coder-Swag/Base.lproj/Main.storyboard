@@ -83,17 +83,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="XJl-5k-4c6"/>
                     <connections>
                         <outlet property="categoryTable" destination="ETH-r3-qgA" id="mNx-Xm-h6V"/>
-                        <segue destination="XOc-cu-4DB" kind="show" identifier="" id="W4v-Qj-cNj"/>
+                        <segue destination="XOc-cu-4DB" kind="show" identifier="ProductsVC" id="W4v-Qj-cNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029.5999999999999" y="-11.244377811094454"/>
         </scene>
-        <!--CODER SWAG-->
+        <!--PRODUCTS-->
         <scene sceneID="elx-Rj-VhG">
             <objects>
-                <viewController title="CODER SWAG" id="XOc-cu-4DB" sceneMemberID="viewController">
+                <viewController title="PRODUCTS" id="XOc-cu-4DB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="deQ-wu-9Cz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
