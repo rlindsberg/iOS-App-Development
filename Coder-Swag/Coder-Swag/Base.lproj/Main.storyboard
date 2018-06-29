@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="2029.5999999999999" y="-11.244377811094454"/>
         </scene>
-        <!--PRODUCTS-->
+        <!--ProductsVC-->
         <scene sceneID="elx-Rj-VhG">
             <objects>
-                <viewController title="PRODUCTS" id="XOc-cu-4DB" sceneMemberID="viewController">
+                <viewController id="XOc-cu-4DB" customClass="ProductsVC" customModule="Coder_Swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="deQ-wu-9Cz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +175,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CyH-gV-rfx"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="VkQ-Z7-keM" id="nfm-vy-iFE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwO-UQ-fUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

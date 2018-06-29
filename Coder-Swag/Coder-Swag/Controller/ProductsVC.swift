@@ -11,7 +11,7 @@ import UIKit
 class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var productsCollection: UICollectionView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
