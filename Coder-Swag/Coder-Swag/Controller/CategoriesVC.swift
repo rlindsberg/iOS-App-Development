@@ -54,6 +54,12 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //modify the default back bar text
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        
         //Grab the dest. view controller and put into a variable, then pass data to it
         if let productsVC = segue.destination as? ProductsVC {
             
