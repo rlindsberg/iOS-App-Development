@@ -16,20 +16,11 @@ class ProductsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    private(set) public var products = [Product]()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //pass in a category, use "category.title" and return matched products.
+    func initProducts(category: Category) {
+        products = DataService.instance.getProduct(forCategoryTitle: category.title)
     }
-    */
 
 }
