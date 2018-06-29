@@ -26,6 +26,9 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     //pass in a category, use "category.title" and return matched products.
     func initProducts(category: Category) {
         products = DataService.instance.getProduct(forCategoryTitle: category.title)
+        
+        //set title for the product segue
+        navigationItem.title = category.title
     }
 
     
