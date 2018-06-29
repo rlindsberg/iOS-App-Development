@@ -36,8 +36,8 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) {
             //pass in the data we need
-            let product = DataService.instance.getProduct(forCategoryTitle: "test")[indexPath.row]
-            cell.up
+            let product = products[indexPath.row]
+            cell.up //*** the auto/completion doesn't work <= forgot to cast in cell
         }
     }
 }
