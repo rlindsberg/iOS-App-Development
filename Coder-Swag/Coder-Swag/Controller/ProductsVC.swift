@@ -34,10 +34,13 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCollectionViewCell{
             //pass in the data we need
             let product = products[indexPath.row]
-            cell.up //*** the auto/completion doesn't work <= forgot to cast in cell
+            cell.updateViews(product: product) //* the first "product" is the parameter name, and the last "product" is the array. See line 24.
+            return cell
+        } else {
+            return ProductCollectionViewCell()
         }
     }
 }
