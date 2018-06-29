@@ -44,6 +44,48 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             return CategoryTableViewCell() //return an empty one
         }
     }
+ 
+    //show another view controller when a category is tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //grab the category that is tapped
+        let category = DataService.instance.getCategories()[indexPath.row]
+        //pass category tapped to performSegue
+        performSegue(withIdentifier: "ProductsVC", sender: category) //pass in "category" into "sender"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Grab the dest. view controller and put into a variable, then pass data to it
+        if let productsVC = segue.destination as? ProductsVC {
+            
+            assert(sender as? Category != nil) //make sure that Category isn't nil. At build time, force crash the app if assertion fails
+            
+            //get matched products. "Sender" is the category we just passed in. See didSelectRowAt
+            productsVC.initProducts(category: sender as! Category) //specify that sender must be a "Category" type
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
