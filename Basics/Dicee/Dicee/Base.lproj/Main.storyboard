@@ -60,6 +60,10 @@
                                 <state key="normal" title="ROLL">
                                     <color key="titleColor" red="0.63921568627450975" green="0.10588235294117647" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6O-Z5-pLS"/>
+                                    <action selector="rollBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k8S-8E-TSR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,6 +81,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="viewDice1" destination="i8q-Yb-Jzc" id="cjG-6K-oG5"/>
+                        <outlet property="viewDice2" destination="8p1-jD-P6D" id="WUD-dj-doR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
