@@ -61,8 +61,7 @@
                                     <color key="titleColor" red="0.63921568627450975" green="0.10588235294117647" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="rollBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6O-Z5-pLS"/>
-                                    <action selector="rollBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k8S-8E-TSR"/>
+                                    <action selector="rollBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7QO-Fz-Wcc"/>
                                 </connections>
                             </button>
                         </subviews>
