@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DiceeVC.swift
 //  Dicee
 //
 //  Created by Roderick Karlemstrand on 30/06/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DiceeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
