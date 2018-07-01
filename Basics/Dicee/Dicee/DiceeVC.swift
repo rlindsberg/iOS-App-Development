@@ -14,20 +14,25 @@ class DiceeVC: UIViewController {
     @IBOutlet weak var viewDice2: UIImageView!
     
     let diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
+    
     @IBAction func rollBtnTapped(_ sender: UIButton) {
-
-        viewDice1.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
-        viewDice2.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
+        rollTheDices()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        rollTheDices()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func rollTheDices() {
+        viewDice1.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
+        viewDice2.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
     }
 
 
