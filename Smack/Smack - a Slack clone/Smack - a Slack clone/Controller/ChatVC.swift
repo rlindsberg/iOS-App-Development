@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChatVC.swift
 //  Smack - a Slack clone
 //
 //  Created by Roderick Karlemstrand on 18/07/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChatVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
