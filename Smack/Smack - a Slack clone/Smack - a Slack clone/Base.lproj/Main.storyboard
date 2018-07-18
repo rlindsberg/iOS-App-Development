@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--ChatVC-->
+        <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChatVC" customModule="Smack___a_Slack_clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,8 +26,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="olG-cj-O9k" kind="custom" identifier="swRearVC" customClass="SWRevealViewControllerSegueSetController" id="WMi-fv-jl6"/>
-                        <segue destination="Ucg-O7-DIS" kind="custom" identifier="swFrontVC" customClass="SWRevealViewControllerSegueSetController" id="eNc-es-3jI"/>
+                        <segue destination="olG-cj-O9k" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="WMi-fv-jl6"/>
+                        <segue destination="Ucg-O7-DIS" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="eNc-es-3jI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti9-z4-774" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="-454"/>
+            <point key="canvasLocation" x="865" y="-340"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="otJ-1n-5nC">
@@ -57,7 +57,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3G-SW-lzX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3G-SW-lzX" userLabel="UIView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boz-GB-wqs">
@@ -93,10 +93,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cvi-gn-dxv"/>
                     </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="vpM-xr-Jdz" id="YG7-aK-caT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLu-fQ-AFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885.60000000000002" y="419.64017991004499"/>
+            <point key="canvasLocation" x="865" y="366"/>
         </scene>
     </scenes>
     <resources>

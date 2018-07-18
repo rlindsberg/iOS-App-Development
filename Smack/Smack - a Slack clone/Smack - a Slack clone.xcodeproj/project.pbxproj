@@ -14,6 +14,7 @@
 		876EDC1C20FF84B500B27D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876EDC1B20FF84B500B27D99 /* Assets.xcassets */; };
 		876EDC1F20FF84B500B27D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876EDC1D20FF84B500B27D99 /* LaunchScreen.storyboard */; };
 		876EDC4820FFA8D200B27D99 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EDC4720FFA8D200B27D99 /* ChannelVC.swift */; };
+		876EDC4B20FFC06800B27D99 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876EDC4520FFA64700B27D99 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -252,6 +253,7 @@
 				876EDC1720FF84B500B27D99 /* ChatVC.swift in Sources */,
 				876EDC4820FFA8D200B27D99 /* ChannelVC.swift in Sources */,
 				876EDC1520FF84B500B27D99 /* AppDelegate.swift in Sources */,
+				876EDC4B20FFC06800B27D99 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

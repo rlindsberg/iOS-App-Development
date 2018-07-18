@@ -10,9 +10,12 @@ import UIKit
 
 class ChatVC: UIViewController {
 
+    @IBOutlet weak var menuBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
