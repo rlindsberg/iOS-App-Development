@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Smack-a-Slack-Clone
+//  Smack - a Slack clone
 //
 //  Created by Roderick Karlemstrand on 18/07/2018.
 //  Copyright © 2018 Roderick Karlemstrand. All rights reserved.

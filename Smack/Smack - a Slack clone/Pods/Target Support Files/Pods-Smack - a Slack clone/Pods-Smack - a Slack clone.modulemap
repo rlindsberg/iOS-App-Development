@@ -1,5 +1,5 @@
 framework module Pods_Smack___a_Slack_clone {
-  umbrella header "Pods-Smack-a-Slack-Clone-umbrella.h"
+  umbrella header "Pods-Smack - a Slack clone-umbrella.h"
 
   export *
   module * { export * }
