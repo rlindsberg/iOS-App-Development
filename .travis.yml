@@ -2,10 +2,10 @@ osx_image: xcode9
 
 language: swift
 
-xcode_workspace: Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcworkspace
-xcode_scheme: Smack\ -\ a\ Slack\ clone
+xcode_workspace: Smack/Smack-a-Slack-Clone/Smack-a-Slack-Clone.xcworkspace
+xcode_scheme: Smack-a-Slack-Clone
 xcode_sdk: iphonesimulator10.2
-podfile: Smack/Smack\ -\ a\ Slack\ clone/Podfile
+podfile: Smack/Smack-a-Slack-Clone/Podfile
 
 
 # blocklist
@@ -15,7 +15,7 @@ branches:
   - experimental
 
 #script: xcodebuild -project Dev-Profile/dev-profile/dev-profile8.xcodeproj -scheme dev-profile8 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-script: xcodebuild -project Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcodeproj -scheme Smack\ -\ a\ Slack\ clone -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -project Smack/Smack-a-Slack-Clone/Smack-a-Slack-Clone.xcodeproj -scheme Smack-a-Slack-Clone -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: true
