@@ -1,5 +1,5 @@
 osx_image: xcode9
-language: swift
+
 language: objective-c
 #xcode_project: Dev-Profile/dev-profile/dev-profile8.xcodeproj
 #xcode_scheme: dev-profile8
