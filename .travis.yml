@@ -5,6 +5,7 @@ language: objective-c
 xcode_workspace: Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcworkspace
 xcode_scheme: Smack\ -\ a\ Slack\ clone
 xcode_sdk: iphonesimulator10.2
+podfile: Smack/Smack\ -\ a\ Slack\ clone/Podfile
 
 before_install:
 - brew install yarn
