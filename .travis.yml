@@ -17,7 +17,7 @@ branches:
   - experimental
 
 #script: xcodebuild -project Dev-Profile/dev-profile/dev-profile8.xcodeproj -scheme dev-profile8 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-script: xcodebuild -project Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcodeproj -scheme Smack\ -\ a\ Slack\ clone -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -project Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcworkspace -scheme Smack\ -\ a\ Slack\ clone -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: true
