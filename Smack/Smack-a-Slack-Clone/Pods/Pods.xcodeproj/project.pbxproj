@@ -22,7 +22,7 @@
 		30D343C2AA53FF30C4DF40D4A981E825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
 		336CC446E4EA9602F678C9BB961F3EEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5AE9B59C532135858986BEADC741F /* SwiftyJSON.swift */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9589F5593FE43C98BD62BAD9EAE0D7 /* TaskDelegate.swift */; };
-		3F23A2375F718D418B4BDCDFA85331C7 /* Pods-Smack - a Slack clone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4AE8DEDD164060DFC6EBC8A06C123A /* Pods-Smack - a Slack clone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F23A2375F718D418B4BDCDFA85331C7 /* Pods-Smack-a-Slack-Clone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD4AE8DEDD164060DFC6EBC8A06C123A /* Pods-Smack-a-Slack-Clone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809A44862303E9DD8E58BDC70716509F /* Request.swift */; };
 		576793A37B494C8E1A6D54ED47B18D38 /* Socket.IO-Client-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F78CC7A3BA7F4925F69A805E085C6749 /* Socket.IO-Client-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58E865B4FF0DBC974E4679067CEB62BC /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B5238FAD58AD0073244E859130B544 /* SocketEventHandler.swift */; };
@@ -43,7 +43,7 @@
 		94F9B71771F3B7BADD765BD88B275479 /* SocketIOStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B0B1570C12001BCAE6AC65A11C033 /* SocketIOStatus.swift */; };
 		98B86DCBA2629D97767B53307D0891C4 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D257CE6B0E73A14187862A77C845DA60 /* SocketAnyEvent.swift */; };
 		996C7FDB2CE61A7392B283019F0C89EB /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A391A13C7B4BB4C6E1669130F1218FC4 /* SocketIOClientSpec.swift */; };
-		9CD7AFDE11992236B6B6B10104C084E8 /* Pods-Smack - a Slack clone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 725E228664DD2E0D2FB719EDB81C1F92 /* Pods-Smack - a Slack clone-dummy.m */; };
+		9CD7AFDE11992236B6B6B10104C084E8 /* Pods-Smack-a-Slack-Clone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 725E228664DD2E0D2FB719EDB81C1F92 /* Pods-Smack-a-Slack-Clone-dummy.m */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC978E1FA5497AA0E064B90C80555E /* AFError.swift */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF330E84E949130A69B83DB653F45EA /* NetworkReachabilityManager.swift */; };
 		A8A613DC636802B7D0720A048EE1C57C /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7088D9826A14B926E35635DD51F55D2 /* SocketPacket.swift */; };
@@ -118,7 +118,7 @@
 		17FF38025F866E0BB5A6DA25F467386C /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SocketIO/Util/SSLSecurity.swift; sourceTree = "<group>"; };
 		1FDA258307A7467A8E6E532CEFE83CCD /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		23B4595AB2A16675007C34BA77ADD80C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		252551A536B0386223EE613113DE92B7 /* Pods-Smack - a Slack clone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Smack - a Slack clone-frameworks.sh"; sourceTree = "<group>"; };
+		252551A536B0386223EE613113DE92B7 /* Pods-Smack-a-Slack-Clone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Smack-a-Slack-Clone-frameworks.sh"; sourceTree = "<group>"; };
 		25DF88670361A8A08CFE313AB7646A81 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		26E4CDCAAC28780CE22805A717E89026 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		2E093363A97FCEFD2F80BF95FA6B0395 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
@@ -140,14 +140,14 @@
 		6C7A28CA76234DC72741CBFA5E5D7CA0 /* SocketIOClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = Source/SocketIO/Client/SocketIOClient.swift; sourceTree = "<group>"; };
 		6D39809AE3914F01A83362DE448A25DE /* SocketExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketIO/Util/SocketExtensions.swift; sourceTree = "<group>"; };
 		71C8F2244CF3813B9DF95A43F6207BFF /* SocketParsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketParsable.swift; path = Source/SocketIO/Parse/SocketParsable.swift; sourceTree = "<group>"; };
-		725E228664DD2E0D2FB719EDB81C1F92 /* Pods-Smack - a Slack clone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Smack - a Slack clone-dummy.m"; sourceTree = "<group>"; };
+		725E228664DD2E0D2FB719EDB81C1F92 /* Pods-Smack-a-Slack-Clone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Smack-a-Slack-Clone-dummy.m"; sourceTree = "<group>"; };
 		787154EB3D2D2B54C95334156A00858F /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
-		7D2402665528A14E69362DDD1E5524D5 /* Pods-Smack - a Slack clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Smack - a Slack clone.release.xcconfig"; sourceTree = "<group>"; };
+		7D2402665528A14E69362DDD1E5524D5 /* Pods-Smack-a-Slack-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Smack-a-Slack-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		803E552AA7532A72855ED62AB7F9ABDA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		809A44862303E9DD8E58BDC70716509F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		80B962018C2A03677EE33B82E6DC2ED2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82393ACBDF1083C151AA62CC40321702 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		830D79B081362560AAAA9D128E1315C4 /* Pods-Smack - a Slack clone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Smack - a Slack clone.modulemap"; sourceTree = "<group>"; };
+		830D79B081362560AAAA9D128E1315C4 /* Pods-Smack-a-Slack-Clone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Smack-a-Slack-Clone.modulemap"; sourceTree = "<group>"; };
 		87987DC8AB3A49546DB533BE004AC6BF /* Socket.IO-Client-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.xcconfig"; sourceTree = "<group>"; };
 		87CC9500A03E5CDC990EA8F189D147DD /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineWebsocket.swift; path = Source/SocketIO/Engine/SocketEngineWebsocket.swift; sourceTree = "<group>"; };
 		8917D5311415E269F0B360240352FC7B /* SocketEngineSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = Source/SocketIO/Engine/SocketEngineSpec.swift; sourceTree = "<group>"; };
@@ -162,12 +162,12 @@
 		A391A13C7B4BB4C6E1669130F1218FC4 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = Source/SocketIO/Client/SocketIOClientSpec.swift; sourceTree = "<group>"; };
 		A8FFCBDA9F623975E0B605C07CE912ED /* SocketEnginePollable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePollable.swift; path = Source/SocketIO/Engine/SocketEnginePollable.swift; sourceTree = "<group>"; };
 		ADEFC6ABADE70E08CAE4679DDD2584B6 /* SocketIOClientOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = Source/SocketIO/Client/SocketIOClientOption.swift; sourceTree = "<group>"; };
-		AF54D4E1A9F516CF97F1B7C517C9FF3A /* Pods-Smack - a Slack clone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Smack - a Slack clone-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF54D4E1A9F516CF97F1B7C517C9FF3A /* Pods-Smack-a-Slack-Clone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Smack-a-Slack-Clone-acknowledgements.plist"; sourceTree = "<group>"; };
 		B46561EE3B906FA71EB1340F50196B89 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		B71B1F6B8D35592AA395D33708CF48C6 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		BAF34BA700CE3480384CC2FFA1131F4A /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB348A8EA2261EE328026F0C95E2010 /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
-		BE4118846FB19DCC15FD4BEEECD2156E /* Pods-Smack - a Slack clone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Smack - a Slack clone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE4118846FB19DCC15FD4BEEECD2156E /* Pods-Smack-a-Slack-Clone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Smack-a-Slack-Clone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BE7D2B3631A377580FD57A26C7EDEC7D /* SocketManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManager.swift; path = Source/SocketIO/Manager/SocketManager.swift; sourceTree = "<group>"; };
 		C1220CA3A0016A129A5B2E3AD1C24F89 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
 		C33D50EC63733CAD1E6079007AEF4764 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 		D257CE6B0E73A14187862A77C845DA60 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = Source/SocketIO/Client/SocketAnyEvent.swift; sourceTree = "<group>"; };
 		D27B0B1570C12001BCAE6AC65A11C033 /* SocketIOStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOStatus.swift; path = Source/SocketIO/Client/SocketIOStatus.swift; sourceTree = "<group>"; };
 		D882D301B0FF7FC81183E86FA0575763 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = Source/SocketIO/Engine/SocketEnginePacketType.swift; sourceTree = "<group>"; };
-		DCBCC82F0F886EB011A234863873BEC5 /* Pods-Smack - a Slack clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Smack - a Slack clone.debug.xcconfig"; sourceTree = "<group>"; };
-		DD4AE8DEDD164060DFC6EBC8A06C123A /* Pods-Smack - a Slack clone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Smack - a Slack clone-umbrella.h"; sourceTree = "<group>"; };
+		DCBCC82F0F886EB011A234863873BEC5 /* Pods-Smack-a-Slack-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Smack-a-Slack-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		DD4AE8DEDD164060DFC6EBC8A06C123A /* Pods-Smack-a-Slack-Clone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Smack-a-Slack-Clone-umbrella.h"; sourceTree = "<group>"; };
 		DDDAE1CEB02E083BCCDD016AEC519F63 /* SocketLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = Source/SocketIO/Util/SocketLogger.swift; sourceTree = "<group>"; };
 		DF1F4FD55F6F882CA6B6806894531A29 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		E6120D3CC5AAFFD6669C7896662FC343 /* SocketTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = Source/SocketIO/Util/SocketTypes.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		E73B1F7454AA7AE273605C861672A2E3 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		E86721069A756EEAC9FE19892AD81D13 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		ECE684766A00F9DF18F1A9A23F18DD48 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		EDB8AEADACDDD87D76EAF1852964F4C1 /* Pods-Smack - a Slack clone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Smack - a Slack clone-resources.sh"; sourceTree = "<group>"; };
+		EDB8AEADACDDD87D76EAF1852964F4C1 /* Pods-Smack-a-Slack-Clone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Smack-a-Slack-Clone-resources.sh"; sourceTree = "<group>"; };
 		EDE0894C0591414FDDA98182A795015C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		F1C686607F4B7C4B5E74C95668962314 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -295,22 +295,22 @@
 			path = Starscream;
 			sourceTree = "<group>";
 		};
-		253F73FF4F821E7CF0A51603135FCC30 /* Pods-Smack - a Slack clone */ = {
+		253F73FF4F821E7CF0A51603135FCC30 /* Pods-Smack-a-Slack-Clone */ = {
 			isa = PBXGroup;
 			children = (
 				47490026CF12AB784E050CD4A35E65EC /* Info.plist */,
-				830D79B081362560AAAA9D128E1315C4 /* Pods-Smack - a Slack clone.modulemap */,
-				BE4118846FB19DCC15FD4BEEECD2156E /* Pods-Smack - a Slack clone-acknowledgements.markdown */,
-				AF54D4E1A9F516CF97F1B7C517C9FF3A /* Pods-Smack - a Slack clone-acknowledgements.plist */,
-				725E228664DD2E0D2FB719EDB81C1F92 /* Pods-Smack - a Slack clone-dummy.m */,
-				252551A536B0386223EE613113DE92B7 /* Pods-Smack - a Slack clone-frameworks.sh */,
-				EDB8AEADACDDD87D76EAF1852964F4C1 /* Pods-Smack - a Slack clone-resources.sh */,
-				DD4AE8DEDD164060DFC6EBC8A06C123A /* Pods-Smack - a Slack clone-umbrella.h */,
-				DCBCC82F0F886EB011A234863873BEC5 /* Pods-Smack - a Slack clone.debug.xcconfig */,
-				7D2402665528A14E69362DDD1E5524D5 /* Pods-Smack - a Slack clone.release.xcconfig */,
+				830D79B081362560AAAA9D128E1315C4 /* Pods-Smack-a-Slack-Clone.modulemap */,
+				BE4118846FB19DCC15FD4BEEECD2156E /* Pods-Smack-a-Slack-Clone-acknowledgements.markdown */,
+				AF54D4E1A9F516CF97F1B7C517C9FF3A /* Pods-Smack-a-Slack-Clone-acknowledgements.plist */,
+				725E228664DD2E0D2FB719EDB81C1F92 /* Pods-Smack-a-Slack-Clone-dummy.m */,
+				252551A536B0386223EE613113DE92B7 /* Pods-Smack-a-Slack-Clone-frameworks.sh */,
+				EDB8AEADACDDD87D76EAF1852964F4C1 /* Pods-Smack-a-Slack-Clone-resources.sh */,
+				DD4AE8DEDD164060DFC6EBC8A06C123A /* Pods-Smack-a-Slack-Clone-umbrella.h */,
+				DCBCC82F0F886EB011A234863873BEC5 /* Pods-Smack-a-Slack-Clone.debug.xcconfig */,
+				7D2402665528A14E69362DDD1E5524D5 /* Pods-Smack-a-Slack-Clone.release.xcconfig */,
 			);
-			name = "Pods-Smack - a Slack clone";
-			path = "Target Support Files/Pods-Smack - a Slack clone";
+			name = "Pods-Smack-a-Slack-Clone";
+			path = "Target Support Files/Pods-Smack-a-Slack-Clone";
 			sourceTree = "<group>";
 		};
 		3FA4504F5350D1DFD97BF8330BFEFCD1 /* Support Files */ = {
@@ -383,7 +383,7 @@
 		9CEEE875443744065D7F446CE68510F6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				253F73FF4F821E7CF0A51603135FCC30 /* Pods-Smack - a Slack clone */,
+				253F73FF4F821E7CF0A51603135FCC30 /* Pods-Smack-a-Slack-Clone */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -463,7 +463,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F23A2375F718D418B4BDCDFA85331C7 /* Pods-Smack - a Slack clone-umbrella.h in Headers */,
+				3F23A2375F718D418B4BDCDFA85331C7 /* Pods-Smack-a-Slack-Clone-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,9 +519,9 @@
 			productReference = 82393ACBDF1083C151AA62CC40321702 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		715C3C042DA12B7DBFC48A2342D86A37 /* Pods-Smack - a Slack clone */ = {
+		715C3C042DA12B7DBFC48A2342D86A37 /* Pods-Smack-a-Slack-Clone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B593E25BC37CE4319C66ECB6DCF19C0 /* Build configuration list for PBXNativeTarget "Pods-Smack - a Slack clone" */;
+			buildConfigurationList = 8B593E25BC37CE4319C66ECB6DCF19C0 /* Build configuration list for PBXNativeTarget "Pods-Smack-a-Slack-Clone" */;
 			buildPhases = (
 				0F3A9E26AC78C114FAFD217373C5F8F3 /* Sources */,
 				B27E7DDB20B243AB04BCC06F7086714E /* Frameworks */,
@@ -535,8 +535,8 @@
 				B3083FBF06E1417E8060FECCA02CD8FB /* PBXTargetDependency */,
 				D6D6932FFF25A9A41434906F2B2B715D /* PBXTargetDependency */,
 			);
-			name = "Pods-Smack - a Slack clone";
-			productName = "Pods-Smack - a Slack clone";
+			name = "Pods-Smack-a-Slack-Clone";
+			productName = "Pods-Smack-a-Slack-Clone";
 			productReference = 3649C289DD8F527CDC91381EA707B2EB /* Pods_Smack___a_Slack_clone.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -614,7 +614,7 @@
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
-				715C3C042DA12B7DBFC48A2342D86A37 /* Pods-Smack - a Slack clone */,
+				715C3C042DA12B7DBFC48A2342D86A37 /* Pods-Smack-a-Slack-Clone */,
 				A96319BA95C5B3DF3633757BC4D380D9 /* Socket.IO-Client-Swift */,
 				E561F90D59000F01D54C56A2413DABBF /* Starscream */,
 				3B3CE3F638DC3FE92BEC8B037C5A5329 /* SwiftyJSON */,
@@ -627,7 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD7AFDE11992236B6B6B10104C084E8 /* Pods-Smack - a Slack clone-dummy.m in Sources */,
+				9CD7AFDE11992236B6B6B10104C084E8 /* Pods-Smack-a-Slack-Clone-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1063,7 +1063,7 @@
 		};
 		CFFB3B54CD284EF9C689E04DD1F1C225 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D2402665528A14E69362DDD1E5524D5 /* Pods-Smack - a Slack clone.release.xcconfig */;
+			baseConfigurationReference = 7D2402665528A14E69362DDD1E5524D5 /* Pods-Smack-a-Slack-Clone.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1076,12 +1076,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Smack - a Slack clone/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Smack-a-Slack-Clone/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Smack-a-Slack-Clone/Pods-Smack-a-Slack-Clone.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1164,7 +1164,7 @@
 		};
 		F8D0E455F657A4BAC7C34CC9CA2C5FB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCBCC82F0F886EB011A234863873BEC5 /* Pods-Smack - a Slack clone.debug.xcconfig */;
+			baseConfigurationReference = DCBCC82F0F886EB011A234863873BEC5 /* Pods-Smack-a-Slack-Clone.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1177,12 +1177,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Smack - a Slack clone/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Smack-a-Slack-Clone/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Smack-a-Slack-Clone/Pods-Smack-a-Slack-Clone.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1246,7 +1246,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B593E25BC37CE4319C66ECB6DCF19C0 /* Build configuration list for PBXNativeTarget "Pods-Smack - a Slack clone" */ = {
+		8B593E25BC37CE4319C66ECB6DCF19C0 /* Build configuration list for PBXNativeTarget "Pods-Smack-a-Slack-Clone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8D0E455F657A4BAC7C34CC9CA2C5FB2 /* Debug */,

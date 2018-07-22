@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		56430CBCE7F4873D727F1FF0 /* Pods-Smack - a Slack clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack - a Slack clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone.debug.xcconfig"; sourceTree = "<group>"; };
-		876EDC1120FF84B500B27D99 /* Smack - a Slack clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack - a Slack clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56430CBCE7F4873D727F1FF0 /* Pods-Smack-a-Slack-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack-a-Slack-Clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack-a-Slack-Clone/Pods-Smack-a-Slack-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		876EDC1120FF84B500B27D99 /* Smack-a-Slack-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack-a-Slack-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		876EDC1420FF84B500B27D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876EDC1620FF84B500B27D99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		876EDC1920FF84B500B27D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,7 +25,7 @@
 		876EDC1E20FF84B500B27D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		876EDC2020FF84B500B27D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CFCC23A8CC3648D3A601306 /* Pods_Smack___a_Slack_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack___a_Slack_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB4623D8A592E94E2AE105D5 /* Pods-Smack - a Slack clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack - a Slack clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone.release.xcconfig"; sourceTree = "<group>"; };
+		FB4623D8A592E94E2AE105D5 /* Pods-Smack-a-Slack-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack-a-Slack-Clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack-a-Slack-Clone/Pods-Smack-a-Slack-Clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 		45572528524375FB2CDFDE43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				56430CBCE7F4873D727F1FF0 /* Pods-Smack - a Slack clone.debug.xcconfig */,
-				FB4623D8A592E94E2AE105D5 /* Pods-Smack - a Slack clone.release.xcconfig */,
+				56430CBCE7F4873D727F1FF0 /* Pods-Smack-a-Slack-Clone.debug.xcconfig */,
+				FB4623D8A592E94E2AE105D5 /* Pods-Smack-a-Slack-Clone.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		876EDC0820FF84B500B27D99 = {
 			isa = PBXGroup;
 			children = (
-				876EDC1320FF84B500B27D99 /* Smack - a Slack clone */,
+				876EDC1320FF84B500B27D99 /* Smack-a-Slack-Clone */,
 				876EDC1220FF84B500B27D99 /* Products */,
 				45572528524375FB2CDFDE43 /* Pods */,
 				2E0C05203397584085C6C32B /* Frameworks */,
@@ -70,12 +70,12 @@
 		876EDC1220FF84B500B27D99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				876EDC1120FF84B500B27D99 /* Smack - a Slack clone.app */,
+				876EDC1120FF84B500B27D99 /* Smack-a-Slack-Clone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		876EDC1320FF84B500B27D99 /* Smack - a Slack clone */ = {
+		876EDC1320FF84B500B27D99 /* Smack-a-Slack-Clone */ = {
 			isa = PBXGroup;
 			children = (
 				876EDC1420FF84B500B27D99 /* AppDelegate.swift */,
@@ -85,15 +85,15 @@
 				876EDC1D20FF84B500B27D99 /* LaunchScreen.storyboard */,
 				876EDC2020FF84B500B27D99 /* Info.plist */,
 			);
-			path = "Smack - a Slack clone";
+			path = "Smack-a-Slack-Clone";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		876EDC1020FF84B500B27D99 /* Smack - a Slack clone */ = {
+		876EDC1020FF84B500B27D99 /* Smack-a-Slack-Clone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 876EDC2320FF84B500B27D99 /* Build configuration list for PBXNativeTarget "Smack - a Slack clone" */;
+			buildConfigurationList = 876EDC2320FF84B500B27D99 /* Build configuration list for PBXNativeTarget "Smack-a-Slack-Clone" */;
 			buildPhases = (
 				B89E34C0B7E053CFAA66AA22 /* [CP] Check Pods Manifest.lock */,
 				876EDC0D20FF84B500B27D99 /* Sources */,
@@ -105,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = "Smack - a Slack clone";
-			productName = "Smack - a Slack clone";
-			productReference = 876EDC1120FF84B500B27D99 /* Smack - a Slack clone.app */;
+			name = "Smack-a-Slack-Clone";
+			productName = "Smack-a-Slack-Clone";
+			productReference = 876EDC1120FF84B500B27D99 /* Smack-a-Slack-Clone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 876EDC0C20FF84B500B27D99 /* Build configuration list for PBXProject "Smack - a Slack clone" */;
+			buildConfigurationList = 876EDC0C20FF84B500B27D99 /* Build configuration list for PBXProject "Smack-a-Slack-Clone" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				876EDC1020FF84B500B27D99 /* Smack - a Slack clone */,
+				876EDC1020FF84B500B27D99 /* Smack-a-Slack-Clone */,
 			);
 		};
 /* End PBXProject section */
@@ -169,7 +169,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Smack - a Slack clone-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Smack-a-Slack-Clone-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -182,7 +182,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smack-a-Slack-Clone/Pods-Smack-a-Slack-Clone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
@@ -197,7 +197,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack-a-Slack-Clone/Pods-Smack-a-Slack-Clone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -343,11 +343,11 @@
 		};
 		876EDC2420FF84B500B27D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56430CBCE7F4873D727F1FF0 /* Pods-Smack - a Slack clone.debug.xcconfig */;
+			baseConfigurationReference = 56430CBCE7F4873D727F1FF0 /* Pods-Smack-a-Slack-Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smack - a Slack clone/Info.plist";
+				INFOPLIST_FILE = "Smack-a-Slack-Clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karlemstrand.Smack---a-Slack-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,11 +358,11 @@
 		};
 		876EDC2520FF84B500B27D99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB4623D8A592E94E2AE105D5 /* Pods-Smack - a Slack clone.release.xcconfig */;
+			baseConfigurationReference = FB4623D8A592E94E2AE105D5 /* Pods-Smack-a-Slack-Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smack - a Slack clone/Info.plist";
+				INFOPLIST_FILE = "Smack-a-Slack-Clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karlemstrand.Smack---a-Slack-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		876EDC0C20FF84B500B27D99 /* Build configuration list for PBXProject "Smack - a Slack clone" */ = {
+		876EDC0C20FF84B500B27D99 /* Build configuration list for PBXProject "Smack-a-Slack-Clone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				876EDC2120FF84B500B27D99 /* Debug */,
@@ -383,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		876EDC2320FF84B500B27D99 /* Build configuration list for PBXNativeTarget "Smack - a Slack clone" */ = {
+		876EDC2320FF84B500B27D99 /* Build configuration list for PBXNativeTarget "Smack-a-Slack-Clone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				876EDC2420FF84B500B27D99 /* Debug */,

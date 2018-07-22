@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "715C3C042DA12B7DBFC48A2342D86A37"
-               BuildableName = "Pods_Smack___a_Slack_clone.framework"
-               BlueprintName = "Pods-Smack - a Slack clone"
+               BuildableName = "Pods_Smack_a_Slack_Clone.framework"
+               BlueprintName = "Pods-Smack-a-Slack-Clone"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -85,9 +85,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "876EDC1020FF84B500B27D99"
-               BuildableName = "Smack - a Slack clone.app"
-               BlueprintName = "Smack - a Slack clone"
-               ReferencedContainer = "container:Smack - a Slack clone.xcodeproj">
+               BuildableName = "Smack-a-Slack-Clone.app"
+               BlueprintName = "Smack-a-Slack-Clone"
+               ReferencedContainer = "container:Smack-a-Slack-Clone.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -104,9 +104,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "876EDC1020FF84B500B27D99"
-            BuildableName = "Smack - a Slack clone.app"
-            BlueprintName = "Smack - a Slack clone"
-            ReferencedContainer = "container:Smack - a Slack clone.xcodeproj">
+            BuildableName = "Smack-a-Slack-Clone.app"
+            BlueprintName = "Smack-a-Slack-Clone"
+            ReferencedContainer = "container:Smack-a-Slack-Clone.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -128,9 +128,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "876EDC1020FF84B500B27D99"
-            BuildableName = "Smack - a Slack clone.app"
-            BlueprintName = "Smack - a Slack clone"
-            ReferencedContainer = "container:Smack - a Slack clone.xcodeproj">
+            BuildableName = "Smack-a-Slack-Clone.app"
+            BlueprintName = "Smack-a-Slack-Clone"
+            ReferencedContainer = "container:Smack-a-Slack-Clone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -147,9 +147,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "876EDC1020FF84B500B27D99"
-            BuildableName = "Smack - a Slack clone.app"
-            BlueprintName = "Smack - a Slack clone"
-            ReferencedContainer = "container:Smack - a Slack clone.xcodeproj">
+            BuildableName = "Smack-a-Slack-Clone.app"
+            BlueprintName = "Smack-a-Slack-Clone"
+            ReferencedContainer = "container:Smack-a-Slack-Clone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

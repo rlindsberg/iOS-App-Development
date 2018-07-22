@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Smack - a Slack clone
+//  Smack-a-Slack-Clone
 //
 //  Created by Roderick Karlemstrand on 18/07/2018.
 //  Copyright © 2018 Roderick Karlemstrand. All rights reserved.
