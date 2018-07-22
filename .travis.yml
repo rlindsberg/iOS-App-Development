@@ -2,7 +2,7 @@ osx_image: xcode9
 
 language: swift
 
-xcode_project: Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcworkspace
+xcode_project: Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcodeproj
 xcode_scheme: Smack\ -\ a\ Slack\ clone
 xcode_sdk: iphonesimulator10.2
 
