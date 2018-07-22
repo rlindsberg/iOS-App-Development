@@ -6,6 +6,11 @@ xcode_workspace: Smack\ -\ a\ Slack\ clone.xcworkspace
 xcode_scheme: Smack\ -\ a\ Slack\ clone
 xcode_sdk: iphonesimulator10.2
 
+before_install:
+  - rvm install ruby-2.2.2
+  - gem install cocoapods
+  - brew update
+  - brew install swiftlint || true
 
 # blocklist
 branches:
