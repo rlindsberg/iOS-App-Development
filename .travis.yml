@@ -21,7 +21,7 @@ branches:
 #script: xcodebuild -project Dev-Profile/dev-profile/dev-profile8.xcodeproj -scheme dev-profile8 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 script:
   - set -o pipefail
-  - xcodebuild -project Smack/slack/slack.xcodeproj -scheme slack -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild build -workspace Smack/slack/slack.xcworkspace -scheme slack -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: true
