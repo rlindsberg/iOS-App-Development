@@ -370,24 +370,52 @@
                                     <action selector="createAccountBtnPressed:" destination="9P8-3R-Wgc" eventType="touchUpInside" id="Tdh-yr-W3c"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdy-Sy-gcY">
+                                <rect key="frame" x="88.5" y="491" width="198" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="Jjf-yT-cIH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <state key="normal" title="Generate background colour">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountBtnPressed:" destination="9P8-3R-Wgc" eventType="touchUpInside" id="IT6-GC-lb1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41O-6e-fXC">
+                                <rect key="frame" x="60" y="560" width="255" height="36"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="Ggx-OQ-bWv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Sdy-Sy-gcY" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="Ax1-ck-IaP"/>
                             <constraint firstItem="IhH-p8-Abg" firstAttribute="bottom" secondItem="ITK-bG-iYL" secondAttribute="bottom" id="Ccg-Jb-ujW"/>
                             <constraint firstItem="yMW-jV-oGt" firstAttribute="top" secondItem="ITK-bG-iYL" secondAttribute="bottom" constant="60" id="Dsy-Ku-f0W"/>
                             <constraint firstItem="hSQ-7J-Sa9" firstAttribute="width" secondItem="Xxo-S7-cXJ" secondAttribute="width" id="FXe-ES-29U"/>
+                            <constraint firstItem="Sdy-Sy-gcY" firstAttribute="top" secondItem="hSQ-7J-Sa9" secondAttribute="bottom" constant="5" id="FaI-3W-avO"/>
                             <constraint firstItem="Xxo-S7-cXJ" firstAttribute="top" secondItem="uMW-wy-E4j" secondAttribute="bottom" constant="50" id="Fn7-kQ-d8t"/>
                             <constraint firstItem="hSQ-7J-Sa9" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="IxJ-O7-xtS"/>
                             <constraint firstItem="Xxo-S7-cXJ" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="NdI-up-qqn"/>
                             <constraint firstItem="NUZ-y6-wAK" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="Ow3-1C-PHE"/>
                             <constraint firstItem="qff-Co-JlK" firstAttribute="top" secondItem="33n-2K-LnG" secondAttribute="top" constant="16" id="SkM-2X-6P8"/>
                             <constraint firstItem="uMW-wy-E4j" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="TD6-YP-N7t"/>
+                            <constraint firstItem="41O-6e-fXC" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="USD-0z-arV"/>
                             <constraint firstItem="yMW-jV-oGt" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="V1g-Yr-6rm"/>
                             <constraint firstItem="NUZ-y6-wAK" firstAttribute="top" secondItem="yMW-jV-oGt" secondAttribute="bottom" constant="30" id="V3d-sy-LZE"/>
                             <constraint firstItem="hSQ-7J-Sa9" firstAttribute="top" secondItem="Xxo-S7-cXJ" secondAttribute="top" id="VOi-xj-QnD"/>
                             <constraint firstItem="uMW-wy-E4j" firstAttribute="top" secondItem="NUZ-y6-wAK" secondAttribute="bottom" constant="30" id="aC2-SZ-eJF"/>
                             <constraint firstItem="ITK-bG-iYL" firstAttribute="top" secondItem="33n-2K-LnG" secondAttribute="top" constant="80" id="cfo-Ok-W2D"/>
                             <constraint firstItem="ITK-bG-iYL" firstAttribute="leading" secondItem="IhH-p8-Abg" secondAttribute="trailing" constant="15" id="eB1-tR-AEs"/>
+                            <constraint firstItem="41O-6e-fXC" firstAttribute="top" secondItem="Sdy-Sy-gcY" secondAttribute="bottom" constant="40" id="j1T-k5-7ah"/>
                             <constraint firstItem="33n-2K-LnG" firstAttribute="trailing" secondItem="qff-Co-JlK" secondAttribute="trailing" constant="16" id="qkS-Qi-Ri4"/>
                             <constraint firstItem="ITK-bG-iYL" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="w9U-qG-Wut"/>
                         </constraints>
