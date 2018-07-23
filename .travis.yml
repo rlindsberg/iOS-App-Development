@@ -7,7 +7,7 @@ xcode_scheme: Smack/slack/slack.xcodeproj/xcshareddata/xcschemes/slack.xcscheme
 xcode_sdk: iphonesimulator10.2
 
 before_install:
-  - gem install cocoapods
+#  - gem install cocoapods
   - brew update
 
 # blocklist
