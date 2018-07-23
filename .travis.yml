@@ -2,8 +2,8 @@ osx_image: xcode9
 language: swift
 #xcode_project: Dev-Profile/dev-profile/dev-profile8.xcodeproj
 #xcode_scheme: dev-profile8
-xcode_project: Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcodeproj
-xcode_scheme: Smack\ -\ a\ Slack\ clone
+xcode_project: Smack/slack/slack.xcodeproj
+xcode_scheme: Smack/slack/slack.xcodeproj/xcshareddata/xcschemes/slack.xcscheme
 xcode_sdk: iphonesimulator10.2
 
 before_install:
@@ -20,7 +20,7 @@ branches:
 #script: xcodebuild -project Dev-Profile/dev-profile/dev-profile8.xcodeproj -scheme dev-profile8 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 script:
   - set -o pipefail
-  - xcodebuild -project Smack/Smack\ -\ a\ Slack\ clone/Smack\ -\ a\ Slack\ clone.xcodeproj -scheme Smack\ -\ a\ Slack\ clone -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild -project Smack/slack/slack.xcodeproj -scheme slack -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: true
