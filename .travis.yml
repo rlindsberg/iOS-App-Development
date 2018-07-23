@@ -5,6 +5,7 @@ language: swift
 xcode_project: Smack/slack/slack.xcodeproj
 xcode_scheme: Smack/slack/slack.xcodeproj/xcshareddata/xcschemes/slack.xcworkspace
 xcode_sdk: iphonesimulator10.2
+podfile: Smack/slack/Podfile
 
 before_install:
   - gem install cocoapods
