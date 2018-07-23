@@ -11,7 +11,7 @@ import UIKit
 class CreateAccountVC: UIViewController {
 
     @IBAction func closeCreateAccountBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
     }
     
     
