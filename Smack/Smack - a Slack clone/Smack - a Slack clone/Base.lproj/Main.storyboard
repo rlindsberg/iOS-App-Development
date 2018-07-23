@@ -228,6 +228,9 @@
                                 <state key="normal" title="Don't have an account? Sign up here">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountBtnPressed:" destination="9P8-3R-Wgc" eventType="touchUpInside" id="FsK-6o-MXm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,10 +252,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6NT-yz-m6G"/>
                     </view>
+                    <connections>
+                        <segue destination="LGr-MX-eqP" kind="show" identifier="toCreateAccount" id="giY-cW-Qxl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jy-Ac-Rdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1672.8" y="-340.47976011994007"/>
+        </scene>
+        <!--Create AccountVC-->
+        <scene sceneID="Sdj-T6-PYh">
+            <objects>
+                <viewController id="LGr-MX-eqP" customClass="CreateAccountVC" customModule="Smack___a_Slack_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sn1-TM-wz2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="33n-2K-LnG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaI-Ef-LSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473" y="-340"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="otJ-1n-5nC">

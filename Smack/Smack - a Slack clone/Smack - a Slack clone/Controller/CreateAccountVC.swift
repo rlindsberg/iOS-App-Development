@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  CreateAccountVC.swift
 //  Smack - a Slack clone
 //
 //  Created by Roderick Karlemstrand on 23/07/2018.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class CreateAccountVC: UIViewController {
 
-    @IBAction func closeLogInBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func createAccountBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
-    }
+//    @IBAction func closeCreateAccountBtnPressed(_ sender: Any) {
+//        dismiss(animated: true, completion: nil)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
