@@ -192,7 +192,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-6s-8kg">
-                                <rect key="frame" x="331" y="20" width="28" height="28"/>
+                                <rect key="frame" x="331" y="36" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
                                     <action selector="closeLogInBtnPressed:" destination="9P8-3R-Wgc" eventType="touchUpInside" id="uiI-Ff-nM1"/>
@@ -235,7 +235,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Sbe-6s-8kg" firstAttribute="top" secondItem="6NT-yz-m6G" secondAttribute="top" id="1HH-QJ-XxH"/>
+                            <constraint firstItem="Sbe-6s-8kg" firstAttribute="top" secondItem="6NT-yz-m6G" secondAttribute="top" constant="16" id="1HH-QJ-XxH"/>
                             <constraint firstItem="eKc-nC-g56" firstAttribute="centerX" secondItem="gJq-cO-iLg" secondAttribute="centerX" id="1er-7i-MRp"/>
                             <constraint firstItem="YnF-hF-bku" firstAttribute="top" secondItem="6NT-yz-m6G" secondAttribute="top" constant="80" id="2sy-xa-aO3"/>
                             <constraint firstItem="iI2-rG-Hkn" firstAttribute="top" secondItem="xRC-5J-X6G" secondAttribute="bottom" constant="36" id="7q8-yZ-Drd"/>
@@ -267,7 +267,20 @@
                     <view key="view" contentMode="scaleToFill" id="sn1-TM-wz2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qff-Co-JlK">
+                                <rect key="frame" x="331" y="36" width="28" height="28"/>
+                                <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closeCreateAccountBtnPressed:" destination="LGr-MX-eqP" eventType="touchUpInside" id="823-jM-qnt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qff-Co-JlK" firstAttribute="top" secondItem="33n-2K-LnG" secondAttribute="top" constant="16" id="SkM-2X-6P8"/>
+                            <constraint firstItem="33n-2K-LnG" firstAttribute="trailing" secondItem="qff-Co-JlK" secondAttribute="trailing" constant="16" id="qkS-Qi-Ri4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="33n-2K-LnG"/>
                     </view>
                 </viewController>

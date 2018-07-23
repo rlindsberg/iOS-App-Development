@@ -10,9 +10,10 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
 
-//    @IBAction func closeCreateAccountBtnPressed(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
-//    }
+    @IBAction func closeCreateAccountBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
