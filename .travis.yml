@@ -3,11 +3,11 @@ language: swift
 #xcode_project: Dev-Profile/dev-profile/dev-profile8.xcodeproj
 #xcode_scheme: dev-profile8
 xcode_project: Smack/slack/slack.xcodeproj
-xcode_scheme: Smack/slack/slack.xcodeproj/xcshareddata/xcschemes/slack.xcscheme
+xcode_scheme: Smack/slack/slack.xcodeproj/xcshareddata/xcschemes/slack.xcworkspace
 xcode_sdk: iphonesimulator10.2
 
 before_install:
-#  - gem install cocoapods
+  - gem install cocoapods
   - brew update
 
 # blocklist
