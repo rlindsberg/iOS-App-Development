@@ -17,3 +17,6 @@ let UNWIND_TO_CHN = "unwindToChannelVC"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+
+//Closure, Alamofire completion handler
+typealias CompletionHandler = (_ Success: Bool) -> () //create a "CompletionHandler" type

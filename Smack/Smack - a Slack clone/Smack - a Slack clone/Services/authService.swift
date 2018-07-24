@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class AuthService {
     static let instance = AuthService()
@@ -39,6 +40,10 @@ class AuthService {
         set {
             defaults.set(newValue, forKey: USER_EMAIL)
         }
+    }
+    
+    func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
+        //completion handler to know when registration is done
     }
     
 }
