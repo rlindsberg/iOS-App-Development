@@ -42,8 +42,49 @@ class AuthService {
         }
     }
     
-    func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
-        //completion handler to know when registration is done
+    func registerUser(email: String, password: String, completion: @escaping CompletionHandler) { //completion handler to know when registration is done
+        let lowerCaseEmail = email.lowercased()
+        //create demo json obj
+        let header = [
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+        let body: [String: Any] = [
+            "email": lowerCaseEmail,
+            "password": password
+        ]
+        
+        //create request
+        Alamofire.request(URL_REG, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (respons) in
+            if respons.result.error == nil {
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(respons.result.error as Any)
+            }
+        } //usually responseJSON
+        
+        
+        
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

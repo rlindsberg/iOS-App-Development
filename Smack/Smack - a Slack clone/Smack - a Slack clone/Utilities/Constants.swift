@@ -20,3 +20,7 @@ let USER_EMAIL = "userEmail"
 
 //Closure, Alamofire completion handler
 typealias CompletionHandler = (_ Success: Bool) -> () //create a "CompletionHandler" type
+
+//Alamofire requests
+let CHAT_API = "https://chat-api-rlindsberg.herokuapp.com/v1/"
+let URL_REG = "\(CHAT_API)account/register"
