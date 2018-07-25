@@ -24,3 +24,4 @@ typealias CompletionHandler = (_ Success: Bool) -> () //create a "CompletionHand
 //Alamofire requests
 let CHAT_API = "https://chat-api-rlindsberg.herokuapp.com/v1/"
 let URL_REG = "\(CHAT_API)account/register"
+let URL_LOGIN = "\(CHAT_API)account/login"
