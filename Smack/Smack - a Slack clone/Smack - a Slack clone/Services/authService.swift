@@ -76,13 +76,27 @@ class AuthService {
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (respons) in //respons = respons from api
             if respons.result.error == nil {
+                if let json = respons.result.value as? Dictionary<String, Any> { //key: String, value: Any
+                    if let email = json["user"] as? String { //assign value to the var email
+                        self.userEmail = email
+                    }
+                    if let token = json["token"] as? String { //assign token value to the var token
+                        self.authToken = token
+                    }
+                }
+                
                 completion(true)
             } else {
                 completion(false)
                 debugPrint(respons.result.error as Any)
             }
         }
+
     }
+    
+
+    
+    
 }
 
 
