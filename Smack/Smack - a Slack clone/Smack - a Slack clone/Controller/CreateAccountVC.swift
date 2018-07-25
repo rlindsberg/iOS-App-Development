@@ -13,6 +13,17 @@ class CreateAccountVC: UIViewController {
     @IBAction func closeCreateAccountBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
     }
+    @IBAction func createAccountPressed(_ sender: Any) {
+    }
+    @IBAction func pickAvatarPressed(_ sender: Any) {
+    }
+    @IBAction func pickBGColorPressed(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var usernameTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwdTxt: UITextField!
+    @IBOutlet weak var userImg: UIImageView!
     
     
     override func viewDidLoad() {
