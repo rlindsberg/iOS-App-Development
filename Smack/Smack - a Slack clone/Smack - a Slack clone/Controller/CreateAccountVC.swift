@@ -14,6 +14,17 @@ class CreateAccountVC: UIViewController {
         performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
     }
     @IBAction func createAccountPressed(_ sender: Any) {
+        //guardlet is a way of unwrapping optional values.
+        //var text: String? { get set }. This is an optional value and thus musted be unwrapped. Eg. emailTxt.text != "".
+        guard let email = emailTxt.text, emailTxt.text != "" else { return } //transfers control out of a scope if the expression is nil
+        guard let pass = passwdTxt.text, passwdTxt.text != "" else { return } //! maybe should consider throw error than just return
+        
+        //all passed,
+        AuthService.instance.registerUser(email: email, password: pass) { (success) in
+            if success {
+                print("registered user!")
+            }
+        }
     }
     @IBAction func pickAvatarPressed(_ sender: Any) {
     }
