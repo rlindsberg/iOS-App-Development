@@ -22,6 +22,11 @@ let USER_EMAIL = "userEmail"
 typealias CompletionHandler = (_ Success: Bool) -> () //create a "CompletionHandler" type
 
 //Alamofire requests
+let HEADER = ["Content-Type": "application/json; charset=utf-8"]
+let BODY = [
+    "email": lowerCaseEmail,
+    "password": password
+]
 let CHAT_API = "https://chat-api-rlindsberg.herokuapp.com/v1/"
 let URL_REG = "\(CHAT_API)account/register"
 let URL_LOGIN = "\(CHAT_API)account/login"

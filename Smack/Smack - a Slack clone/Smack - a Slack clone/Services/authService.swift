@@ -44,17 +44,8 @@ class AuthService {
     
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler) { //completion handler to know when registration is done
         let lowerCaseEmail = email.lowercased()
-        //create demo json obj
-        let header = [
-            "Content-Type": "application/json; charset=utf-8"
-        ]
-        let body: [String: Any] = [
-            "email": lowerCaseEmail,
-            "password": password
-        ]
-        
         //create request
-        Alamofire.request(URL_REG, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (respons) in
+        Alamofire.request(URL_REG, method: .post, parameters: BODY, encoding: JSONEncoding.default, headers: HEADER).responseString { (respons) in
             if respons.result.error == nil {
                 completion(true)
             } else {
@@ -63,22 +54,11 @@ class AuthService {
             }
         } //usually responseJSON
         
-        
-        
     }
     
     func loginUser(email: String, password: String, completion: @escaping CompletionHandler ) {
         let lowerCaseEmail = email.lowercased()
-        //create demo json obj
-        let header = [
-            "Content-Type": "application/json; charset=utf-8"
-        ]
-        let body: [String: Any] = [
-            "email": lowerCaseEmail,
-            "password": password
-        ]
-        
-        Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (respons) in //respons = respons from api
+        Alamofire.request(URL_LOGIN, method: .post, parameters: BODY, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (respons) in //respons = respons from api
             if respons.result.error == nil {
                 completion(true)
             } else {
