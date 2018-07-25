@@ -20,6 +20,7 @@
 		876EDC4820FFA8D200B27D99 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EDC4720FFA8D200B27D99 /* ChannelVC.swift */; };
 		876EDC4B20FFC06800B27D99 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876EDC4520FFA64700B27D99 /* SWRevealViewController.m */; };
 		877F3063210614E7005294F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F3062210614E7005294F4 /* LoginVC.swift */; };
+		87DD49452108F1CA00B9A31B /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD49442108F1CA00B9A31B /* RoundedBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		876EDC4520FFA64700B27D99 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		876EDC4720FFA8D200B27D99 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		877F3062210614E7005294F4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		87DD49442108F1CA00B9A31B /* RoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
 		9CFCC23A8CC3648D3A601306 /* Pods_Smack___a_Slack_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Smack___a_Slack_clone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4623D8A592E94E2AE105D5 /* Pods-Smack - a Slack clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack - a Slack clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack - a Slack clone/Pods-Smack - a Slack clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				871C3ACE2104667F00CCFA82 /* GradientView.swift */,
+				87DD49442108F1CA00B9A31B /* RoundedBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				876EDC1720FF84B500B27D99 /* ChatVC.swift in Sources */,
 				871390BD21077DFC00D73E3F /* authService.swift in Sources */,
+				87DD49452108F1CA00B9A31B /* RoundedBtn.swift in Sources */,
 				876EDC4820FFA8D200B27D99 /* ChannelVC.swift in Sources */,
 				871838E821062EEE00253E9B /* CreateAccountVC.swift in Sources */,
 				877F3063210614E7005294F4 /* LoginVC.swift in Sources */,
