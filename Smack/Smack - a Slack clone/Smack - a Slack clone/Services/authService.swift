@@ -52,16 +52,17 @@ class AuthService {
         ]
         
         //create request
+        debugPrint("Waking up server... It may take 10 sec if at the first time.")
         Alamofire.request(URL_REG, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (respons) in
             if respons.result.error == nil {
+                debugPrint("Server up. \n User registered successfully!")
                 completion(true)
             } else {
+                debugPrint("Server up. \n")
                 completion(false)
                 debugPrint(respons.result.error as Any)
             }
         } //usually responseJSON
-        
-        
         
     }
     
@@ -74,6 +75,7 @@ class AuthService {
             "password": password
         ]
         
+        debugPrint("Waking up server... It may take 10 sec if at the first time.")
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (respons) in //respons = respons from api
             if respons.result.error == nil {
                 if let json = respons.result.value as? Dictionary<String, Any> { //key: String, value: Any
@@ -84,9 +86,10 @@ class AuthService {
                         self.authToken = token
                     }
                 }
-                
+                debugPrint("Server up. \n Using email \(self.userEmail)... User logged in successfully!")
                 completion(true)
             } else {
+                debugPrint("Server up. \n")
                 completion(false)
                 debugPrint(respons.result.error as Any)
             }
