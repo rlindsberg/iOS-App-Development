@@ -1,31 +1,26 @@
 //
-//  ChannelVC.swift
+//  LoginVC.swift
 //  Smack - a Slack clone
 //
-//  Created by Roderick Karlemstrand on 18/07/2018.
+//  Created by Roderick Karlemstrand on 23/07/2018.
 //  Copyright © 2018 Roderick Karlemstrand. All rights reserved.
 //
 
 import UIKit
 
-class ChannelVC: UIViewController {
+class LoginVC: UIViewController {
 
-    @IBOutlet weak var loginBtn: UIButton! //change title to username while logged in
-    @IBAction func loginBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    @IBAction func closeLogInBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    //go from create account here
-    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
-        
+    @IBAction func createAccountBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
     }
 
     override func didReceiveMemoryWarning() {
