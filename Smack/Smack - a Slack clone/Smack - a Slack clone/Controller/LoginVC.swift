@@ -10,11 +10,28 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    
     @IBAction func closeLogInBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func createAccountBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    }
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        guard let email = emailTxt.text else { return }
+        guard let pass = passwordTxt.text else { return }
+        AuthService.instance.loginUser(email: email, password: pass) { (success) in
+            if success {
+                print("CreateAccountVC: logged in user!", AuthService.instance.authToken)
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        
+        
+        
+        
     }
     
     override func viewDidLoad() {
