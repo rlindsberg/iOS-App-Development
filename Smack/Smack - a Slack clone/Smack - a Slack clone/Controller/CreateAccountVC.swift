@@ -46,7 +46,7 @@ class CreateAccountVC: UIViewController {
                             if success { //end of three stages. quit to channel view
                                 print("CreateAccountVC: created user! all done.", UserDataService.instance.name, UserDataService.instance.avatarName)
                                 
-                                performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
+                                self.performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
                             }
                         })
                     }
