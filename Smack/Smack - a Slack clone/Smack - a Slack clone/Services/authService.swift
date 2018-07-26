@@ -95,12 +95,15 @@ class AuthService {
 //                completion(true)
 // Replaced with SwiftyJSON
                 
+                //SwiftyJSON
                 guard let swiftyjsonData = respons.data else { return }
-                
                 let json = try! JSON(data: swiftyjsonData) //Force unwrap the result. Make swiftyjson obj
                 self.userEmail = json["user"].stringValue //automaticlly unwrap
                 self.authToken = json["token"].stringValue
-
+                //SwiftyJSON
+                
+                debugPrint("Server up. \n Using email \(self.userEmail)... User logged in successfully!")
+                completion(true)
             } else {
                 debugPrint("Server up. \n")
                 completion(false)
