@@ -35,7 +35,10 @@ class AuthService {
     
     var userEmail: String {
         get {
+            print("Running getters. ")
+            print(defaults.value(forKey: USER_EMAIL) as! String)
             return defaults.value(forKey: USER_EMAIL) as! String //cast as string
+
         }
         set {
             defaults.set(newValue, forKey: USER_EMAIL)
