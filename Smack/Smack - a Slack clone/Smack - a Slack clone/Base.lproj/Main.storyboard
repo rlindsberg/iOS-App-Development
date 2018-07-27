@@ -485,7 +485,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="niR-3m-rrY">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="niR-3m-rrY" customClass="AvatarCell" customModule="Smack___a_Slack_clone" customModuleProvider="target">
                                         <rect key="frame" x="20" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -503,6 +503,9 @@
                                             <constraint firstAttribute="trailing" secondItem="YaZ-Hb-jZp" secondAttribute="trailing" constant="2" id="dpb-ot-URX"/>
                                             <constraint firstAttribute="bottom" secondItem="YaZ-Hb-jZp" secondAttribute="bottom" constant="2" id="uZW-3Y-QlM"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="avatarImg" destination="YaZ-Hb-jZp" id="8wt-u8-YRX"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
