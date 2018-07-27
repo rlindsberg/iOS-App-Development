@@ -21,7 +21,10 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     //Type 'PickAvatarVC' conforms to protocol 'UICollectionViewDataSource'
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //type cellItemAt
-        return UICollectionViewCell()
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
+            return cell
+        }
+        return AvatarCell() //an empty cell
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
