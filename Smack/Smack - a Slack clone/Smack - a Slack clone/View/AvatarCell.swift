@@ -20,9 +20,13 @@ class AvatarCell: UICollectionViewCell {
     func setupView() {
         self.layer.backgroundColor = UIColor.lightGray.cgColor
         self.layer.cornerRadius = 42
-        
         self.clipsToBounds = true
     }
     
+    func updateViews(avatar: Avatar) {
+        //Should add avatar name to UserDataService
+        
+        avatarImg.image = UIImage(named: avatar.imgName)
+    }
     
 }

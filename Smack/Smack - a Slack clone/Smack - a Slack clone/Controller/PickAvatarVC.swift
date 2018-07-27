@@ -10,6 +10,8 @@ import UIKit
 
 class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{ //implement protocols to work with collection view
 
+    private(set) public var avatars = [Avatar]() //make an empty array of avatars
+    
     @IBOutlet weak var segmentCtrl: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -22,6 +24,9 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     //Type 'PickAvatarVC' conforms to protocol 'UICollectionViewDataSource'
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //type cellItemAt
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
+            avatars = AvatarDataService.instance.getAvatars(dark: true)
+            let avatar = avatars[indexPath.row]
+            cell.updateViews(avatar: avatar)
             return cell
         }
         return AvatarCell() //an empty cell

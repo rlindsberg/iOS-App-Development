@@ -15,6 +15,8 @@
 		871C3AD221047A8300CCFA82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C3AD121047A8300CCFA82 /* Constants.swift */; };
 		8740BD16210B3F7E00EE4EB5 /* PickAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8740BD15210B3F7E00EE4EB5 /* PickAvatarVC.swift */; };
 		8760C6AC210B483C007C20DF /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C6AB210B483C007C20DF /* AvatarCell.swift */; };
+		8760C6AE210B846B007C20DF /* AvatarDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C6AD210B846B007C20DF /* AvatarDataService.swift */; };
+		8760C6B3210B852B007C20DF /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C6B2210B852B007C20DF /* Avatar.swift */; };
 		876EDC1520FF84B500B27D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EDC1420FF84B500B27D99 /* AppDelegate.swift */; };
 		876EDC1720FF84B500B27D99 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EDC1620FF84B500B27D99 /* ChatVC.swift */; };
 		876EDC1A20FF84B500B27D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876EDC1820FF84B500B27D99 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		871C3AD121047A8300CCFA82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8740BD15210B3F7E00EE4EB5 /* PickAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAvatarVC.swift; sourceTree = "<group>"; };
 		8760C6AB210B483C007C20DF /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		8760C6AD210B846B007C20DF /* AvatarDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDataService.swift; sourceTree = "<group>"; };
+		8760C6B2210B852B007C20DF /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		876EDC1120FF84B500B27D99 /* Smack - a Slack clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack - a Slack clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		876EDC1420FF84B500B27D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876EDC1620FF84B500B27D99 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				871390BC21077DFC00D73E3F /* authService.swift */,
 				87191863210A314A00953F49 /* UserDataService.swift */,
+				8760C6AD210B846B007C20DF /* AvatarDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -96,6 +101,14 @@
 				871C3AD121047A8300CCFA82 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8760C6B1210B8519007C20DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8760C6B2210B852B007C20DF /* Avatar.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		876EDC0820FF84B500B27D99 = {
@@ -121,7 +134,7 @@
 			children = (
 				871390B921077D9200D73E3F /* Services */,
 				871C3AD021047A6800CCFA82 /* Utilities */,
-				876EDC4A20FFA8DC00B27D99 /* Model */,
+				8760C6B1210B8519007C20DF /* Model */,
 				876EDC4920FFA8D700B27D99 /* View */,
 				876EDC4620FFA86000B27D99 /* Controller */,
 				876EDC4220FFA61D00B27D99 /* Supporting Files */,
@@ -164,13 +177,6 @@
 				8760C6AB210B483C007C20DF /* AvatarCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		876EDC4A20FFA8DC00B27D99 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +302,7 @@
 				876EDC1720FF84B500B27D99 /* ChatVC.swift in Sources */,
 				871390BD21077DFC00D73E3F /* authService.swift in Sources */,
 				87DD49452108F1CA00B9A31B /* RoundedBtn.swift in Sources */,
+				8760C6B3210B852B007C20DF /* Avatar.swift in Sources */,
 				87191864210A314A00953F49 /* UserDataService.swift in Sources */,
 				8740BD16210B3F7E00EE4EB5 /* PickAvatarVC.swift in Sources */,
 				876EDC4820FFA8D200B27D99 /* ChannelVC.swift in Sources */,
@@ -305,6 +312,7 @@
 				8760C6AC210B483C007C20DF /* AvatarCell.swift in Sources */,
 				876EDC1520FF84B500B27D99 /* AppDelegate.swift in Sources */,
 				876EDC4B20FFC06800B27D99 /* SWRevealViewController.m in Sources */,
+				8760C6AE210B846B007C20DF /* AvatarDataService.swift in Sources */,
 				871C3AD221047A8300CCFA82 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
