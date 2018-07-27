@@ -373,6 +373,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="9P8-3R-Wgc" eventType="touchUpInside" id="Tdh-yr-W3c"/>
+                                    <action selector="pickAvatarBtnPressed:" destination="LGr-MX-eqP" eventType="touchUpInside" id="An6-uH-D2E"/>
                                     <action selector="pickAvatarPressed:" destination="LGr-MX-eqP" eventType="touchUpInside" id="MTw-Ff-HP2"/>
                                 </connections>
                             </button>
@@ -437,12 +438,28 @@
                         <outlet property="userImg" destination="Xxo-S7-cXJ" id="Kj4-Lr-AA3"/>
                         <outlet property="usernameTxt" destination="I62-Bd-dmb" id="nkE-VG-Mf9"/>
                         <segue destination="Zd1-uT-FVG" kind="unwind" identifier="unwindToChannelVC" unwindAction="prepareForUnwindWithSegue:" id="VcC-OK-EuR"/>
+                        <segue destination="ox0-qh-E9t" kind="show" identifier="toPickAvatar" id="S4U-H1-7kc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YaI-Ef-LSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Zd1-uT-FVG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2481" y="-341"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cNR-SR-BrV">
+            <objects>
+                <viewController id="ox0-qh-E9t" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKm-4d-xe2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L1L-PN-NrN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9z-SH-6Qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3293" y="-341"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="otJ-1n-5nC">

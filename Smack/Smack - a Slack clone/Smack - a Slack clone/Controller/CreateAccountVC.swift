@@ -20,6 +20,9 @@ class CreateAccountVC: UIViewController {
     var avatarColour = "[0.5, 0.5, 0.5, 1]" //light gray
     
     
+    @IBAction func pickAvatarBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_PICK_AVATAR, sender: nil)
+    }
     @IBAction func closeCreateAccountBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
     }
