@@ -13,7 +13,7 @@ import SwiftyJSON
 class AuthService {
     static let instance = AuthService()
     let defaults = UserDefaults.standard //save data in the app
-    
+
     var isLoggedIn: Bool {
         get {
             return defaults.bool(forKey: LOGGED_IN_KEY)
@@ -23,7 +23,7 @@ class AuthService {
         }
 
     }
-    
+
     var authToken: String {
         get {
             return defaults.value(forKey: TOKEN_KEY) as! String //cast as string
@@ -31,9 +31,9 @@ class AuthService {
         set {
             defaults.set(newValue, forKey: TOKEN_KEY)
         }
-        
+
     }
-    
+
     var userEmail: String {
         get {
             print("Running getters. ")
@@ -45,7 +45,7 @@ class AuthService {
             defaults.set(newValue, forKey: USER_EMAIL)
         }
     }
-    
+
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler) { //completion handler to know when registration is done
         let lowerCaseEmail = email.lowercased()
         //create demo json obj
@@ -54,12 +54,12 @@ class AuthService {
             "email": lowerCaseEmail,
             "password": password
         ]
-        
+
         //create request
         debugPrint("Waking up server... It may take 10 sec if at the first time.")
         Alamofire.request(URL_REG, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (respons) in
             if respons.result.error == nil {
-                debugPrint("Server up. \n User registered successfully!")
+                debugPrint("Server up. \nUser registered successfully!")
                 completion(true)
             } else {
                 debugPrint("Server up. \n")
@@ -67,9 +67,9 @@ class AuthService {
                 debugPrint(respons.result.error as Any)
             }
         } //usually responseJSON
-        
+
     }
-    
+
     func loginUser(email: String, password: String, completion: @escaping CompletionHandler ) {
         let lowerCaseEmail = email.lowercased()
         //create demo json obj
@@ -78,7 +78,7 @@ class AuthService {
             "email": lowerCaseEmail,
             "password": password
         ]
-        
+        print("Logging in user")
         debugPrint("Waking up server... It may take 10 sec if at the first time.")
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (respons) in //respons = respons from api
             if respons.result.error == nil {
@@ -91,18 +91,26 @@ class AuthService {
 //                        self.authToken = token
 //                    }
 //                }
-//                debugPrint("Server up. \n Using email \(self.userEmail)... User logged in successfully!")
+//                debugPrint("Server up. \nUsing email \(self.userEmail)... User logged in successfully!")
 //                completion(true)
 // Replaced with SwiftyJSON
-                
+
                 //SwiftyJSON
                 guard let swiftyjsonData = respons.data else { return }
                 let json = try! JSON(data: swiftyjsonData) //Force unwrap the result. Make swiftyjson obj
-                self.userEmail = json["user"].stringValue //automaticlly unwrap
-                self.authToken = json["token"].stringValue
-                //SwiftyJSON
+                print("Respons from server: \(json)")
                 
-                debugPrint("Server up. \n Using email \(self.userEmail)... User logged in successfully!")
+                if(json["user"].stringValue != "" && json["token"].stringValue != "") {
+                    self.userEmail = json["user"].stringValue //automaticlly unwrap
+                    self.authToken = json["token"].stringValue
+                } else {
+                    debugPrint("Unauthorized")
+                    completion(false)
+                    return
+                }
+
+                //SwiftyJSON
+                debugPrint("Server up. \nUsing email \(self.userEmail)... User logged in successfully!")
                 completion(true)
             } else {
                 debugPrint("Server up. \n")
@@ -112,7 +120,7 @@ class AuthService {
         }
 
     }
-    
+
     func createUser(avatarColour: String, avatarName: String, email: String, name: String, completion: @escaping CompletionHandler) {
         let lowerCaseEmail = email.lowercased()
         //create demo json obj
@@ -126,7 +134,7 @@ class AuthService {
             "avatarName": avatarName,
             "avatarColor": avatarColour
         ]
-        
+
         Alamofire.request(URL_CREATE_USER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (respons) in
             if respons.result.error == nil {
                 guard let swiftyjsonData = respons.data else { return }
@@ -136,11 +144,11 @@ class AuthService {
                 let avatarName = json["avatarName"].stringValue
                 let email = json["email"].stringValue
                 let name = json["name"].stringValue
-                
+
                 //set user data
                 UserDataService.instance.setUserData(id: id, avatarColour: avatarColour, avatarName: avatarName, email: email, name: name)
                 completion(true)
-                
+
             } else {
                 completion(false)
                 debugPrint(respons.result.error as Any)
@@ -148,7 +156,7 @@ class AuthService {
         }
     }
 
-    
+
 }
 
 
