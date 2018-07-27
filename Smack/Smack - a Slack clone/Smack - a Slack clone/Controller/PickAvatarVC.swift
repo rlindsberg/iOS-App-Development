@@ -11,11 +11,14 @@ import UIKit
 class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{ //implement protocols to work with collection view
 
     private(set) public var avatars = [Avatar]() //make an empty array of avatars
+    private var avatarType = AvatarType.dark //default
     
     @IBOutlet weak var segmentCtrl: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBAction func segmentCtrlPressed(_ sender: Any) {
+        avatarType = AvatarType.light
+        collectionView.reloadData()
     }
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -24,7 +27,7 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     //Type 'PickAvatarVC' conforms to protocol 'UICollectionViewDataSource'
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //type cellItemAt
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
-            avatars = AvatarDataService.instance.getAvatars(dark: true)
+            avatars = AvatarDataService.instance.getAvatars(type: avatarType)
             let avatar = avatars[indexPath.row]
             cell.updateViews(avatar: avatar)
             return cell

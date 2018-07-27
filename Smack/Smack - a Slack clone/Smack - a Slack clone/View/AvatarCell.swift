@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum AvatarType {
+    case dark
+    case light
+}
 class AvatarCell: UICollectionViewCell {
     
     @IBOutlet weak var avatarImg: UIImageView!
@@ -27,6 +31,12 @@ class AvatarCell: UICollectionViewCell {
         //Should add avatar name to UserDataService
         
         avatarImg.image = UIImage(named: avatar.imgName)
+    }
+    
+    func configureCell(index: Int, type: AvatarType) {
+        if type == AvatarType.dark {
+            
+        }
     }
     
 }

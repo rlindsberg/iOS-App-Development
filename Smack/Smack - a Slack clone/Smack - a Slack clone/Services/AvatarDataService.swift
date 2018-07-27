@@ -40,7 +40,6 @@ class AvatarDataService {
         Avatar(title: "dark25", imageName: "dark25"),
         Avatar(title: "dark26", imageName: "dark26"),
         Avatar(title: "dark27", imageName: "dark27"),
-        Avatar(title: "dark28", imageName: "dark28")
     ]
     
     private let lightAvatars = [
@@ -72,11 +71,10 @@ class AvatarDataService {
         Avatar(title: "light25", imageName: "light25"),
         Avatar(title: "light26", imageName: "light26"),
         Avatar(title: "light27", imageName: "light27"),
-        Avatar(title: "light28", imageName: "light28")
     ]
     
-    func getAvatars(dark: Bool) -> [Avatar] {
-        if dark {
+    func getAvatars(type: AvatarType) -> [Avatar] {
+        if (type == AvatarType.dark) {
             return darkAvatars
         } else {
             return lightAvatars
