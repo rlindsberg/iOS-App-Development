@@ -17,7 +17,11 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBAction func segmentCtrlPressed(_ sender: Any) {
-        avatarType = AvatarType.light
+        if(segmentCtrl.selectedSegmentIndex == 0) {
+            avatarType = AvatarType.dark
+        } else {
+            avatarType = AvatarType.light
+        }
         collectionView.reloadData()
     }
     @IBAction func backBtnPressed(_ sender: Any) {
