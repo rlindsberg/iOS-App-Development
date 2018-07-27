@@ -33,7 +33,7 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
             avatars = AvatarDataService.instance.getAvatars(type: avatarType)
             let avatar = avatars[indexPath.row]
-            cell.updateViews(avatar: avatar)
+            cell.updateViews(type: avatarType, avatar: avatar)
             return cell
         }
         return AvatarCell() //an empty cell

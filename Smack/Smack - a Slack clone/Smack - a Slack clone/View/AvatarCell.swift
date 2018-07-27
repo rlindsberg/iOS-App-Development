@@ -27,10 +27,15 @@ class AvatarCell: UICollectionViewCell {
         self.clipsToBounds = true
     }
     
-    func updateViews(avatar: Avatar) {
+    func updateViews(type: AvatarType, avatar: Avatar) {
         //Should add avatar name to UserDataService
         
         avatarImg.image = UIImage(named: avatar.imgName)
+        if type == AvatarType.dark {
+            self.layer.backgroundColor = UIColor.lightGray.cgColor
+        } else {
+            self.layer.backgroundColor = UIColor.darkGray.cgColor
+        }
     }
     
     func configureCell(index: Int, type: AvatarType) {
