@@ -404,9 +404,14 @@
                                     <action selector="createAccountPressed:" destination="LGr-MX-eqP" eventType="touchUpInside" id="qFN-TJ-dnE"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6hg-AF-mRt">
+                                <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6hg-AF-mRt" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="4l9-kM-hNW"/>
                             <constraint firstItem="Sdy-Sy-gcY" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="Ax1-ck-IaP"/>
                             <constraint firstItem="IhH-p8-Abg" firstAttribute="bottom" secondItem="ITK-bG-iYL" secondAttribute="bottom" id="Ccg-Jb-ujW"/>
                             <constraint firstItem="yMW-jV-oGt" firstAttribute="top" secondItem="ITK-bG-iYL" secondAttribute="bottom" constant="45" id="Dsy-Ku-f0W"/>
@@ -426,12 +431,14 @@
                             <constraint firstItem="ITK-bG-iYL" firstAttribute="top" secondItem="33n-2K-LnG" secondAttribute="top" constant="70" id="cfo-Ok-W2D"/>
                             <constraint firstItem="ITK-bG-iYL" firstAttribute="leading" secondItem="IhH-p8-Abg" secondAttribute="trailing" constant="15" id="eB1-tR-AEs"/>
                             <constraint firstItem="41O-6e-fXC" firstAttribute="top" secondItem="Sdy-Sy-gcY" secondAttribute="bottom" constant="25" id="j1T-k5-7ah"/>
+                            <constraint firstItem="6hg-AF-mRt" firstAttribute="centerY" secondItem="sn1-TM-wz2" secondAttribute="centerY" id="k5S-KT-JNR"/>
                             <constraint firstItem="33n-2K-LnG" firstAttribute="trailing" secondItem="qff-Co-JlK" secondAttribute="trailing" constant="16" id="qkS-Qi-Ri4"/>
                             <constraint firstItem="ITK-bG-iYL" firstAttribute="centerX" secondItem="sn1-TM-wz2" secondAttribute="centerX" id="w9U-qG-Wut"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="33n-2K-LnG"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="6hg-AF-mRt" id="FsT-VU-78p"/>
                         <outlet property="emailTxt" destination="Zx5-zA-LDh" id="Tup-Np-BJa"/>
                         <outlet property="passwdTxt" destination="8YI-M3-Vmi" id="DrA-LI-738"/>
                         <outlet property="userImg" destination="Xxo-S7-cXJ" id="Kj4-Lr-AA3"/>

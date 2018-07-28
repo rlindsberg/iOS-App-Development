@@ -14,6 +14,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwdTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //default variables
     var avatarName = "profileDefault"
@@ -28,6 +29,9 @@ class CreateAccountVC: UIViewController {
         performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
     }
     @IBAction func createAccountPressed(_ sender: Any) {
+        //show activity indicator
+        activityIndicator.isHidden = false
+        
         //guardlet is a way of unwrapping optional values.
         //var text: String? { get set }. This is an optional value and thus musted be unwrapped. Eg. emailTxt.text != "".
         guard let username = usernameTxt.text, usernameTxt.text != "" else { return }
@@ -50,16 +54,19 @@ class CreateAccountVC: UIViewController {
                             if success { //end of three stages. quit to channel view
                                 print("CreateAccountVC: created user! all done.", UserDataService.instance.name, UserDataService.instance.avatarName)
                                 
+                                //stop the activity indicator
+                                self.activityIndicator.isHidden = true
+                                self.activityIndicator.stopAnimating()
+                                
+                                //go to channel
                                 self.performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
                             }
                         })
                     }
-                    
-
-                    
                 })
             }
         }
+        
     }
 
     @IBAction func pickBGColorPressed(_ sender: Any) {
@@ -85,6 +92,8 @@ class CreateAccountVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //hide activityIndicator at start
+        activityIndicator.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
