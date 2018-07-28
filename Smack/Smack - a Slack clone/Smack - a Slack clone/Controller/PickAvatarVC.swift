@@ -44,6 +44,14 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 28
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //iPhone 4s, 5s and SE
+        if UIScreen.main.bounds.width == 320 {
+            return CGSize(width: 84, height: 84)
+        } else {
+            return CGSize(width: 100, height: 100)
+        }
+    }
     //end of conforming to protocol
     
     override func viewDidLoad() {
