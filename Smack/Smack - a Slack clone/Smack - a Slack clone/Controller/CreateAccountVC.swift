@@ -69,11 +69,6 @@ class CreateAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         bgColour = UIColor(red: r, green: g, blue: b, alpha: 1)
         userImg.backgroundColor = bgColour
-        if UIScreen.main.bounds.width == 320 {
-            userImg.layer.cornerRadius = 42
-        } else {
-            userImg.layer.cornerRadius = 50
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

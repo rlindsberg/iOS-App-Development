@@ -24,12 +24,7 @@ class AvatarCell: UICollectionViewCell {
     func setupView() {
         self.layer.backgroundColor = UIColor.lightGray.cgColor
         self.clipsToBounds = true
-        //iPhone 4s, 5s, SE
-        if UIScreen.main.bounds.width == 320 {
-            self.layer.cornerRadius = 42
-        } else { //other devices
-            self.layer.cornerRadius = 50
-        }
+        self.layer.cornerRadius = self.frame.width / 2
     }
     
     func updateViews(type: AvatarType, avatar: Avatar) {
