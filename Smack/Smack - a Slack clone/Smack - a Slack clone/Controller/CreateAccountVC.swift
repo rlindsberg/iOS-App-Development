@@ -68,7 +68,9 @@ class CreateAccountVC: UIViewController {
         let g = CGFloat(arc4random_uniform(255)) / 255
         let b = CGFloat(arc4random_uniform(255)) / 255
         bgColour = UIColor(red: r, green: g, blue: b, alpha: 1)
-        userImg.backgroundColor = bgColour
+        UIView.animate(withDuration: 0.2) { 
+            self.userImg.backgroundColor = self.bgColour
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
