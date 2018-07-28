@@ -65,6 +65,13 @@ class CreateAccountVC: UIViewController {
     @IBAction func pickBGColorPressed(_ sender: Any) {
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+            print("Default avatar changed to \(avatarName)")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

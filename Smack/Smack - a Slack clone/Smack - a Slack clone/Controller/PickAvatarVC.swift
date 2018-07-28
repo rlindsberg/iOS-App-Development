@@ -52,6 +52,14 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
             return CGSize(width: 100, height: 100)
         }
     }
+    //selecte avatar, type didselecte
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if avatarType == .dark {
+            UserDataService.instance.updateAvatarName(avatarName: "\( avatars[indexPath.row].title )" )
+            print("Selected avatar: \(avatars[indexPath.row].title)")
+        }
+        dismiss(animated: true, completion: nil)
+    }
     //end of conforming to protocol
     
     override func viewDidLoad() {
