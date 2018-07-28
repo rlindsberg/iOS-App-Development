@@ -374,7 +374,6 @@
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="9P8-3R-Wgc" eventType="touchUpInside" id="Tdh-yr-W3c"/>
                                     <action selector="pickAvatarBtnPressed:" destination="LGr-MX-eqP" eventType="touchUpInside" id="An6-uH-D2E"/>
-                                    <action selector="pickAvatarPressed:" destination="LGr-MX-eqP" eventType="touchUpInside" id="MTw-Ff-HP2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdy-Sy-gcY">

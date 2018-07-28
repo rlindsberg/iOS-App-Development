@@ -18,6 +18,7 @@ class CreateAccountVC: UIViewController {
     //default variables
     var avatarName = "profileDefault"
     var avatarColour = "[0.5, 0.5, 0.5, 1]" //light gray
+    var bgColour: UIColor? //optional avatar bg colour
     
     
     @IBAction func pickAvatarBtnPressed(_ sender: Any) {
@@ -60,9 +61,19 @@ class CreateAccountVC: UIViewController {
             }
         }
     }
-    @IBAction func pickAvatarPressed(_ sender: Any) {
-    }
+
     @IBAction func pickBGColorPressed(_ sender: Any) {
+        //generate bg colour
+        let r = CGFloat(arc4random_uniform(255)) / 255
+        let g = CGFloat(arc4random_uniform(255)) / 255
+        let b = CGFloat(arc4random_uniform(255)) / 255
+        bgColour = UIColor(red: r, green: g, blue: b, alpha: 1)
+        userImg.backgroundColor = bgColour
+        if UIScreen.main.bounds.width == 320 {
+            userImg.layer.cornerRadius = 42
+        } else {
+            userImg.layer.cornerRadius = 50
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
