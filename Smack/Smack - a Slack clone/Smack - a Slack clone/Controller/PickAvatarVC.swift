@@ -31,6 +31,7 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     //Type 'PickAvatarVC' conforms to protocol 'UICollectionViewDataSource'
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //type cellItemAt
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
+            print("Loding \(avatarType) avatars to the variable avatar")
             avatars = AvatarDataService.instance.getAvatars(type: avatarType)
             let avatar = avatars[indexPath.row]
             cell.updateViews(type: avatarType, avatar: avatar)
@@ -57,6 +58,8 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
         if avatarType == .dark {
             UserDataService.instance.updateAvatarName(avatarName: "\( avatars[indexPath.row].title )" )
             print("Selected avatar: \(avatars[indexPath.row].title)")
+        } else {
+            UserDataService.instance.updateAvatarName(avatarName: "\( avatars[indexPath.row].title )" )
         }
         dismiss(animated: true, completion: nil)
     }
