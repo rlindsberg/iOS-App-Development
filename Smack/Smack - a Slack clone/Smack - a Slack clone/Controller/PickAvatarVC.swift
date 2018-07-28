@@ -11,24 +11,38 @@ import UIKit
 class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{ //implement protocols to work with collection view
 
     private(set) public var avatars = [Avatar]() //make an empty array of avatars
-    private var avatarType = AvatarType.dark //default
-    
+    private var avatarType = AvatarDataService.instance.avatarType //default
+    private var segmentIndex = AvatarDataService.instance.avatarTypeSegmentCtrl
+
     @IBOutlet weak var segmentCtrl: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+
     @IBAction func segmentCtrlPressed(_ sender: Any) {
+        //if first segment is pressed
         if(segmentCtrl.selectedSegmentIndex == 0) {
-            avatarType = AvatarType.dark
-        } else {
+            
+            avatarType = AvatarType.dark //set local
+            AvatarDataService.instance.avatarType = avatarType //set global
+            segmentIndex = 0 //set local
+            AvatarDataService.instance.avatarTypeSegmentCtrl = segmentIndex //set global
+            
+        } else { //if second segment is pressed
+            
             avatarType = AvatarType.light
+            AvatarDataService.instance.avatarType = avatarType
+            segmentIndex = 1
+            AvatarDataService.instance.avatarTypeSegmentCtrl = segmentIndex
+            
         }
+        //avatar type changed. Reload view
         collectionView.reloadData()
     }
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    //Type 'PickAvatarVC' conforms to protocol 'UICollectionViewDataSource'
+
+//Type 'PickAvatarVC' conforms to protocol 'UICollectionViewDataSource'
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //type cellItemAt
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
             print("Loding \(avatarType) avatars to the variable avatar")
@@ -55,31 +69,46 @@ class PickAvatarVC: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     //selecte avatar, type didselecte
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if avatarType == .dark {
+        //save selected avatar to UserDataService
+        if segmentIndex == 0 { //save dark ones
             UserDataService.instance.updateAvatarName(avatarName: "\( avatars[indexPath.row].title )" )
             print("Selected avatar: \(avatars[indexPath.row].title)")
-        } else {
+        } else { //save light ones
             UserDataService.instance.updateAvatarName(avatarName: "\( avatars[indexPath.row].title )" )
         }
         dismiss(animated: true, completion: nil)
     }
-    //end of conforming to protocol
-    
+//end of conforming to protocol
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+//        print("ViewDidLoad, printing segmentctrl")
+//        print(segmentCtrl.selectedSegmentIndex)
+//        print("printing userDataService")
+//        print(AvatarDataService.instance.avatarTypeSegmentCtrl)
+//        print("Printing segmentIndex")
+//        print(segmentIndex)
+//        print("Printing avatarType")
+//        print(avatarType)
+
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+
+        //this if block fix bug that after selecting a light avatar and pressing "selecte avatar" again, PickAvatarVC view shows light avatars but "Dark" in SegmentController is highlighted
+        //SegmentController inits in this VC and it always uses the default index 0
+        if segmentIndex == 1 {
+            segmentCtrl.selectedSegmentIndex = segmentIndex
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation

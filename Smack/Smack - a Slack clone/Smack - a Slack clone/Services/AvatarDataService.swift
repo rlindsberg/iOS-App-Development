@@ -11,6 +11,9 @@ import Foundation
 class AvatarDataService {
     static let instance = AvatarDataService()
     
+    public var avatarType = AvatarType.dark
+    public var avatarTypeSegmentCtrl = 0
+
     private let darkAvatars = [
         Avatar(title: "dark0", imageName: "dark0"),
         Avatar(title: "dark1", imageName: "dark1"),
