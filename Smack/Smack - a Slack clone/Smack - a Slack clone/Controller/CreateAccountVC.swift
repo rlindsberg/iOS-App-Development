@@ -18,7 +18,7 @@ class CreateAccountVC: UIViewController {
     
     //default variables
     var avatarName = "profileDefault"
-    var avatarColour = "[0.5, 0.5, 0.5, 1]" //light gray
+    var avatarBgColour = "[0.5, 0.5, 0.5, 1]" //light gray
     var bgColour: UIColor? //optional avatar bg colour
     
     
@@ -49,7 +49,7 @@ class CreateAccountVC: UIViewController {
                         print("CreateAccountVC: logged in user!", AuthService.instance.authToken)
                         
                         //Reference to property 'avatarName' in closure requires explicit 'self.' to make capture semantics explicit
-                        AuthService.instance.createUser(avatarColour: self.avatarColour, avatarName: self.avatarName, email: email, name: username, completion: { (success) in
+                        AuthService.instance.createUser(avatarBgColour: self.avatarBgColour, avatarName: self.avatarName, email: email, name: username, completion: { (success) in
                             
                             if success { //end of three stages. quit to channel view
                                 print("CreateAccountVC: created user! all done.", UserDataService.instance.name, UserDataService.instance.avatarName)
@@ -78,6 +78,9 @@ class CreateAccountVC: UIViewController {
         let g = CGFloat(arc4random_uniform(255)) / 255
         let b = CGFloat(arc4random_uniform(255)) / 255
         bgColour = UIColor(red: r, green: g, blue: b, alpha: 1)
+        
+        avatarBgColour = "[\(r), \(b), \(g), 1]" //update default avatar bg colour
+        
         UIView.animate(withDuration: 0.2) { 
             self.userImg.backgroundColor = self.bgColour
         }

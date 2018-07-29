@@ -121,7 +121,7 @@ class AuthService {
 
     }
 
-    func createUser(avatarColour: String, avatarName: String, email: String, name: String, completion: @escaping CompletionHandler) {
+    func createUser(avatarBgColour: String, avatarName: String, email: String, name: String, completion: @escaping CompletionHandler) {
         let lowerCaseEmail = email.lowercased()
         //create demo json obj
         let header = [
@@ -132,7 +132,7 @@ class AuthService {
             "email": lowerCaseEmail,
             "name": name,
             "avatarName": avatarName,
-            "avatarColor": avatarColour
+            "avatarColor": avatarBgColour
         ]
 
         Alamofire.request(URL_CREATE_USER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (respons) in
@@ -146,7 +146,7 @@ class AuthService {
                 let name = json["name"].stringValue
 
                 //set user data
-                UserDataService.instance.setUserData(id: id, avatarColour: avatarColour, avatarName: avatarName, email: email, name: name)
+                UserDataService.instance.setUserData(id: id, avatarBgColour: avatarColour, avatarName: avatarName, email: email, name: name)
                 completion(true)
 
             } else {
