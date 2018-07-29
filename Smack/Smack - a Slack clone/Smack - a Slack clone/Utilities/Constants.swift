@@ -28,3 +28,6 @@ let CHAT_API = "https://chat-api-rlindsberg.herokuapp.com/v1/"
 let URL_REG = "\(CHAT_API)account/register"
 let URL_LOGIN = "\(CHAT_API)account/login"
 let URL_CREATE_USER = "\(CHAT_API)user/add"
+
+//notification
+let NOTIF_DATA_DID_CHANGE = Notification.Name("NC broadcast: User Data Did Change")

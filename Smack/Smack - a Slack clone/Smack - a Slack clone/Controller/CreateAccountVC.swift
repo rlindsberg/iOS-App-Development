@@ -58,6 +58,9 @@ class CreateAccountVC: UIViewController {
                                 self.activityIndicator.isHidden = true
                                 self.activityIndicator.stopAnimating()
                                 
+                                //send out notification
+                                NotificationCenter.default.post(name: NOTIF_DATA_DID_CHANGE, object: nil)
+                                
                                 //go to channel
                                 self.performSegue(withIdentifier: UNWIND_TO_CHN, sender: nil)
                             }
