@@ -11,6 +11,8 @@ import UIKit
 class ChannelVC: UIViewController {
 
     @IBOutlet weak var loginBtn: UIButton! //change title to username while logged in
+    @IBOutlet weak var userImg: CircledImage!
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
@@ -26,6 +28,21 @@ class ChannelVC: UIViewController {
         // Do any additional setup after loading the view.
         
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
+        
+        //observer listens to the notif. broadcasts
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_DATA_DID_CHANGE, object: nil)
+    }
+    
+    //accept Notif. runs when notif. is recevied
+    @objc func userDataDidChange(_ notif: Notification) {
+        if AuthService.instance.isLoggedIn {
+            loginBtn.setTitle(UserDataService.instance.name, for: .normal) //the normal state of the btn
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+        } else {
+            //change to defaults
+            loginBtn.setTitle("Log in", for: .normal)
+            userImg.image = UIImage(named: "menuProfileIcon")
+        }
     }
 
     override func didReceiveMemoryWarning() {
