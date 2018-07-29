@@ -24,13 +24,11 @@ class LoginVC: UIViewController {
         guard let pass = passwordTxt.text else { return }
         AuthService.instance.loginUser(email: email, password: pass) { (success) in
             if success {
+                AuthService.instance.isLoggedIn = true
                 print("CreateAccountVC: logged in user!", AuthService.instance.authToken)
                 self.dismiss(animated: true, completion: nil)
             }
         }
-        
-        
-        
         
     }
     

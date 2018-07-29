@@ -15,6 +15,10 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //set isLoggedIn to false. Shoud rewrite code so that user doesn't have to log in every time
+        AuthService.instance.isLoggedIn = false
+        
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())

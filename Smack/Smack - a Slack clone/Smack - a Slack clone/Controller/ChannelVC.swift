@@ -14,7 +14,9 @@ class ChannelVC: UIViewController {
     @IBOutlet weak var userImg: CircledImage!
     
     @IBAction func loginBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        if !AuthService.instance.isLoggedIn { //not logged in
+            performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
     }
     
     //go from create account here
@@ -37,7 +39,8 @@ class ChannelVC: UIViewController {
     @objc func userDataDidChange(_ notif: Notification) {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal) //the normal state of the btn
-            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            userImg.image = UIImage(named: UserDataService.instance.avatarName) //update avatar img
+            userImg.backgroundColor = AvatarDataService.instance.avatarBgRGB //update avatar bg
         } else {
             //change to defaults
             loginBtn.setTitle("Log in", for: .normal)

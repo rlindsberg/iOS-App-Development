@@ -13,7 +13,8 @@ class AvatarDataService {
     
     public var avatarType = AvatarType.dark
     public var avatarTypeSegmentCtrl = 0
-
+    public var avatarBgRGB = UIColor()
+    
     private let darkAvatars = [
         Avatar(title: "dark0", imageName: "dark0"),
         Avatar(title: "dark1", imageName: "dark1"),

@@ -31,6 +31,7 @@ class CreateAccountVC: UIViewController {
     @IBAction func createAccountPressed(_ sender: Any) {
         //show activity indicator
         activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
         
         //guardlet is a way of unwrapping optional values.
         //var text: String? { get set }. This is an optional value and thus musted be unwrapped. Eg. emailTxt.text != "".
@@ -46,9 +47,16 @@ class CreateAccountVC: UIViewController {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
                     
                     if success { //then create user
+                        AuthService.instance.isLoggedIn = true
                         print("CreateAccountVC: logged in user!", AuthService.instance.authToken)
                         
                         //Reference to property 'avatarName' in closure requires explicit 'self.' to make capture semantics explicit
+                        
+                        print("Using avatarBgColour to create user...............")
+                        print(self.avatarBgColour)
+                        
+                        
+                        
                         AuthService.instance.createUser(avatarBgColour: self.avatarBgColour, avatarName: self.avatarName, email: email, name: username, completion: { (success) in
                             
                             if success { //end of three stages. quit to channel view
@@ -79,7 +87,11 @@ class CreateAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         bgColour = UIColor(red: r, green: g, blue: b, alpha: 1)
         
-        avatarBgColour = "[\(r), \(b), \(g), 1]" //update default avatar bg colour
+        AvatarDataService.instance.avatarBgRGB = bgColour!
+        
+        avatarBgColour = "[\(r), \(g), \(b), 1]" //update default avatar bg colour
+        print("Printing avatarBgColour...............")
+        print(avatarBgColour)
         
         UIView.animate(withDuration: 0.2) { 
             self.userImg.backgroundColor = self.bgColour
