@@ -16,6 +16,10 @@ class ChannelVC: UIViewController {
     @IBAction func loginBtnPressed(_ sender: Any) {
         if !AuthService.instance.isLoggedIn { //not logged in
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        } else { //takes user to profile page
+            let profileVC = ProfileVC()
+            profileVC.modalPresentationStyle = .custom //present vc as model
+            present(profileVC, animated: true, completion: nil)
         }
     }
     

@@ -18,6 +18,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="Smack___a_Slack_clone" customModuleProvider="target">
             <connections>
+                <outlet property="email" destination="vO7-pc-Y1G" id="qEO-V9-dLL"/>
+                <outlet property="profileImg" destination="zBL-9E-f5i" id="nGn-aN-n10"/>
+                <outlet property="username" destination="mXG-1i-nDY" id="AQC-A5-RCw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,6 +39,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fce-dg-93s">
                             <rect key="frame" x="267" y="8" width="28" height="28"/>
                             <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="closeBtnPressed:" destination="-1" eventType="touchUpInside" id="xUs-Yh-brJ"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zqU-Z6-KGe">
                             <rect key="frame" x="97" y="40" width="109" height="190.5"/>
@@ -73,6 +79,9 @@
                             <state key="normal" title="Log out">
                                 <color key="titleColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="logOutBtnPressed:" destination="-1" eventType="touchUpInside" id="3gO-od-OVb"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

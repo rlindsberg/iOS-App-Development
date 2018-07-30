@@ -10,6 +10,16 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var email: UILabel!
+    
+    
+    @IBAction func closeBtnPressed(_ sender: Any) {
+    }
+    @IBAction func logOutBtnPressed(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
