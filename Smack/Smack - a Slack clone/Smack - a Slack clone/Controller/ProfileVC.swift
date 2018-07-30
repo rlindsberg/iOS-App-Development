@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
-    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var email: UILabel!
     
@@ -24,6 +24,11 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        username.text = UserDataService.instance.name
+        email.text = UserDataService.instance.email
+        userImg.image = UIImage(named: UserDataService.instance.avatarName)
+        userImg.backgroundColor = AvatarDataService.instance.avatarBgRGB
+        
     }
 
     override func didReceiveMemoryWarning() {
