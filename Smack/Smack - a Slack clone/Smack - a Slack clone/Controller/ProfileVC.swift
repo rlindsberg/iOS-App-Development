@@ -16,6 +16,7 @@ class ProfileVC: UIViewController {
     
     
     @IBAction func closeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func logOutBtnPressed(_ sender: Any) {
     }
