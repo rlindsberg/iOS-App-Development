@@ -28,10 +28,20 @@ class LoginVC: UIViewController {
                 print("CreateAccountVC: logged in user!", AuthService.instance.authToken)
                 
                 //setting user data
-                UserDataService.instance.setUserData(id: "lind", avatarBgColour: "[0.5, 0.5, 0.5, 1]", avatarName: "light3", email: self.emailTxt.text!, name: "lind")
-                AvatarDataService.instance.avatarBgRGB = UIColor(red: 0.3, green: 0.7, blue: 0.2, alpha: 1)
-                //send out notification
-                NotificationCenter.default.post(name: NOTIF_DATA_DID_CHANGE, object: nil)
+                AuthService.instance.createUserByEmail(email: self.emailTxt.text!, completion: { (success) in
+                    
+                    if success {
+                        print("Created user by email! User data:")
+                        print(UserDataService.instance.name)
+                        print(UserDataService.instance.avatarName)
+                        print(UserDataService.instance.avatarBgColour)
+                        
+                        //send out notification
+                        NotificationCenter.default.post(name: NOTIF_DATA_DID_CHANGE, object: nil)
+                    }
+                })
+                
+
                 
                 self.dismiss(animated: true, completion: nil)
             }

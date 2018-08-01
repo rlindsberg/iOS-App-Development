@@ -42,9 +42,12 @@ class ChannelVC: UIViewController {
     //accept Notif. runs when notif. is recevied
     @objc func userDataDidChange(_ notif: Notification) {
         if AuthService.instance.isLoggedIn {
+            print("User data did change, updating ChannelVC..")
             loginBtn.setTitle(UserDataService.instance.name, for: .normal) //the normal state of the btn
             userImg.image = UIImage(named: UserDataService.instance.avatarName) //update avatar img
-            userImg.backgroundColor = AvatarDataService.instance.avatarBgRGB //update avatar bg
+            
+            let avatarUIColor = UserDataService.instance.returnUIColour(components: UserDataService.instance.avatarBgColour)
+            userImg.backgroundColor = avatarUIColor //update avatar bg
         } else {
             //change to defaults
             loginBtn.setTitle("Log in", for: .normal)

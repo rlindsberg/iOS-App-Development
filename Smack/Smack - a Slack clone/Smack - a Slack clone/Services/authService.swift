@@ -155,6 +155,37 @@ class AuthService {
             }
         }
     }
+    
+    func createUserByEmail(email: String, completion: @escaping CompletionHandler) {
+        let header = [
+            "Authorization": "Bearer \(AuthService.instance.authToken)",
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+        let url = "https://chat-api-rlindsberg.herokuapp.com/v1/user/byEmail/\(email)"
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (respons) in
+            print("Finding user... Printing respons")
+            if respons.result.error == nil {
+                guard let swiftyjsonData = respons.data else { return }
+                print("Found user! Here are your settings")
+                let json = JSON(swiftyjsonData)
+                print(json)
+                let id = json["_id"].stringValue
+                let avatarColour = json["avatarColor"].stringValue
+                let avatarName = json["avatarName"].stringValue
+                let email = json["email"].stringValue
+                let name = json["name"].stringValue
+                
+                //set user data
+                UserDataService.instance.setUserData(id: id, avatarBgColour: avatarColour, avatarName: avatarName, email: email, name: name)
+                
+                completion(true)
+            }
+            
+            
+        }
+        
+        
+    }
 
 
 }
