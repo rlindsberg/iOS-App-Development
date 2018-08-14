@@ -18,7 +18,17 @@ class ProfileVC: UIViewController {
     @IBAction func closeBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func logOutBtnPressed(_ sender: Any) {
+<<<<<<< HEAD
+=======
+        AuthService.instance.logoutUser()
+        
+        //broadcast that user data has changed
+        NotificationCenter.default.post(name: NOTIF_DATA_DID_CHANGE, object: nil)
+        
+        dismiss(animated: true, completion: nil)
+>>>>>>> Finish logout user
     }
     
     override func viewDidLoad() {

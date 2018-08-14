@@ -70,6 +70,16 @@ class AuthService {
 
     }
 
+<<<<<<< HEAD
+=======
+    func logoutUser() {
+        self.userEmail = ""
+        self.authToken = ""
+        self.isLoggedIn = false
+        UserDataService.instance.clearUserData()
+    }
+    
+>>>>>>> Finish logout user
     func loginUser(email: String, password: String, completion: @escaping CompletionHandler ) {
         let lowerCaseEmail = email.lowercased()
         //create demo json obj
