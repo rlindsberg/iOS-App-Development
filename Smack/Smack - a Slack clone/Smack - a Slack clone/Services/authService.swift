@@ -70,16 +70,13 @@ class AuthService {
 
     }
 
-<<<<<<< HEAD
-=======
     func logoutUser() {
         self.userEmail = ""
         self.authToken = ""
         self.isLoggedIn = false
         UserDataService.instance.clearUserData()
     }
-    
->>>>>>> Finish logout user
+
     func loginUser(email: String, password: String, completion: @escaping CompletionHandler ) {
         let lowerCaseEmail = email.lowercased()
         //create demo json obj
@@ -109,7 +106,7 @@ class AuthService {
                 guard let swiftyjsonData = respons.data else { return }
                 let json = try! JSON(data: swiftyjsonData) //Force unwrap the result. Make swiftyjson obj
                 print("Respons from server: \(json)")
-                
+
                 if(json["user"].stringValue != "" && json["token"].stringValue != "") {
                     self.userEmail = json["user"].stringValue //automaticlly unwrap
                     self.authToken = json["token"].stringValue
@@ -165,7 +162,7 @@ class AuthService {
             }
         }
     }
-    
+
     func createUserByEmail(email: String, completion: @escaping CompletionHandler) {
         let header = [
             "Authorization": "Bearer \(AuthService.instance.authToken)",
@@ -184,38 +181,18 @@ class AuthService {
                 let avatarName = json["avatarName"].stringValue
                 let email = json["email"].stringValue
                 let name = json["name"].stringValue
-                
+
                 //set user data
                 UserDataService.instance.setUserData(id: id, avatarBgColour: avatarColour, avatarName: avatarName, email: email, name: name)
-                
+
                 completion(true)
             }
-            
-            
+
+
         }
-        
-        
+
+
     }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

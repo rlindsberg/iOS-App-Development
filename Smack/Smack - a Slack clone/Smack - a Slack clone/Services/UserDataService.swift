@@ -24,6 +24,14 @@ class UserDataService {
         self.name = name
     }
     
+    func clearUserData() {
+        self.id = ""
+        self.avatarBgColour = ""
+        self.avatarName = ""
+        self.email = ""
+        self.name = ""
+    }
+    
     func updateAvatarName(avatarName: String) {
         self.avatarName = avatarName
     }

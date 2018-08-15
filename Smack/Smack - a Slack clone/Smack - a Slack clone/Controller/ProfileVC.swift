@@ -13,24 +13,21 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var email: UILabel!
-    
-    
+
+
     @IBAction func closeBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
+
     @IBAction func logOutBtnPressed(_ sender: Any) {
-<<<<<<< HEAD
-=======
         AuthService.instance.logoutUser()
-        
+
         //broadcast that user data has changed
         NotificationCenter.default.post(name: NOTIF_DATA_DID_CHANGE, object: nil)
-        
+
         dismiss(animated: true, completion: nil)
->>>>>>> Finish logout user
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,14 +36,14 @@ class ProfileVC: UIViewController {
         email.text = UserDataService.instance.email
         userImg.image = UIImage(named: UserDataService.instance.avatarName)
         userImg.backgroundColor = AvatarDataService.instance.avatarBgRGB
-        
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
